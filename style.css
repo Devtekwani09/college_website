@@ -11,10 +11,18 @@
     #banner{
         justify-content: center;
     }
-}
 
-#nav{
-    font-size: large;
+    #image{
+        margin-left: 5px;
+    }
+
+    #image2{
+        margin-left: 5px;
+    }
+
+    #image3{
+        margin-left: 0px;
+    }
 }
 
 .fa {
