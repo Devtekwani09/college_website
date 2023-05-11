@@ -6,7 +6,16 @@
     float: left;
 }
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
+.nav{
+flex-wrap: wrap;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+display: flex;
+flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
     #headernav{
         display: none;
     }
@@ -24,7 +33,30 @@
     text-decoration: none;
     border-radius: 50%;
   }
+
+  html{
+    scroll-behavior: inherit;
+  }
   
+  #highlights {
+    background-image: url('https://img.freepik.com/free-photo/abstract-blur-defocused-bookshelf-library_1203-9640.jpg?w=996&t=st=1683827576~exp=1683828176~hmac=d0fb2fca939164478e9c446e0f496df1e6f421b6ee4c31e95c94fd1c899476f3');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#highlights ul li{
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+    background-color: white;
+}
+
+#highlights ul li:hover{
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    transform: scale(1.1);
+    z-index: 100;
+    background: #25bcff;
+    color: #fff;
+}
   
   /* Add a hover effect if you want */
   .fa:hover {
