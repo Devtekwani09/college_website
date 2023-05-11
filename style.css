@@ -70,3 +70,12 @@ flex-direction: row-reverse;
     background: #3B5998;
     color: white;
   } */
+
+  #preloader{
+    background: #000 url(images/preloader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
