@@ -12,7 +12,8 @@ padding-left: 0;
 margin-bottom: 0;
 list-style: none;
 display: flex;
-flex-direction: row-reverse;
+flex-direction: row;
+float: inline-end;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
@@ -27,7 +28,7 @@ flex-direction: row-reverse;
 
 .fa {
     padding: 20px;
-    font-size: 60px;
+    font-size: 40px;
     width: 60px;
     text-align: center;
     text-decoration: none;
@@ -67,7 +68,7 @@ flex-direction: row-reverse;
 
 #highlights ul li:hover{
     box-shadow: 0 5px 25px rgba(0,0,0,.2);
-    transform: scale(1.05);
+    transform: scale(1.1);
     z-index: 100;
     background: #25bcff;
     color: #fff;
@@ -76,6 +77,7 @@ flex-direction: row-reverse;
   /* Add a hover effect if you want */
   .fa:hover {
     opacity: 0.7;
+
   }
   
   /* Set a specific color for each brand */
@@ -93,4 +95,24 @@ flex-direction: row-reverse;
     width: 100%;
     position: fixed;
     z-index: 100;
+  }
+
+  .menu ul li ul li
+  {
+    float: none;
+  }
+  .menu ul li ul
+  {
+    background-color: pink;
+    position: absolute;
+    display: none;
+  }
+  /* *
+  {
+    margin: 0;
+    padding: 0;
+  } */
+  .menu ul li:hover ul
+  {
+    display: block;
   }
