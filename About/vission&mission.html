@@ -7,10 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cards.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>PIET JAIPUR</title>
+    <title>Vision-Mission</title>
   </head>
   <body>
 
@@ -21,13 +21,13 @@
           <div id="logo" class="row m-0 p-0">
               <div class="col-4 col-xxl-6 align-self-left">
                   <a href="/" class="text-decoration-none">
-                      <img src="images/logopiet.png" alt="logo" style="width: 350px;" class="img-fluid">
+                      <img src="/images/logopiet.png" alt="logo" style="width: 350px;" class="img-fluid">
                   </a>
               </div>
               <div class="col-8 col-xxl-6 text-end align-self-right float-right hidden-xs">
                 <ul class="nav  float-right">
                   <li class="nav-item">
-                    <button type="button" class="btn btn-secondary m-2"><a class="text-light text-decoration-none" href="index.html">Home</a></button>
+                    <button type="button" class="btn btn-secondary m-2"><a class="text-light text-decoration-none" href="/index.html">Home</a></button>
                   </li>
                   <li class="nav-item">
                     <button type="button" class="btn btn-secondary m-2">E-Library</button>
@@ -65,7 +65,7 @@
   </section>
 
   <!--                    Navbar                       -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="position: sticky; top: 0; z-index: 100;">
     <div class="menu container-fluid">
       <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -77,9 +77,9 @@
               About Us
             </a>
             <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item text-warning" href="About/vission&mission.html">Vision & Mission</a></li>
+              <li><a class="dropdown-item text-warning" href="vission&mission.html">Vision & Mission</a></li>
               <li><a class="dropdown-item text-warning" href="#">Messages</a></li>
-              <li><a class="dropdown-item text-warning" href="/About/Min-gc.html">Minutes of GC Meeting</a></li>
+              <li><a class="dropdown-item text-warning" href="Min-gc.html">Minutes of GC Meeting</a></li>
               <li><a class="dropdown-item text-warning" href="#">Our Partners</a></li>
               <li><a class="dropdown-item text-warning" href="#">Annual Report</a></li>
             </ul>
@@ -91,11 +91,11 @@
             <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Academics
             </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item text-primary" href="dept/1styr.html">First Year Department</a></li>
-              <li><a class="dropdown-item text-primary" href="dept/csdept.html">Computer Science Department</a></li>
-              <li><a class="dropdown-item text-primary" href="dept/Aidsdept.html">AI-DS Department</a></li>
-              <li><a class="dropdown-item text-primary" href="dept/IDEALAB.html">IDEA LAB Department</a></li>
+            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="/dept/1styr.html">First Year Department</a></li>
+              <li><a class="dropdown-item text-primary" href="/dept/csdept.html">Computer Science Department</a></li>
+              <li><a class="dropdown-item text-primary" href="/dept/Aidsdept.html">AI-DS Department</a></li>
+              <li><a class="dropdown-item text-primary" href="/dept/IDEALAB.html">IDEA LAB Department</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -146,185 +146,26 @@
     </div>
   </nav>
 
-  <!--                    carausels                    -->
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/c1.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/c2.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/c3.jpg" class="d-block w-100" alt="...">
-      </div>
+  <!--                     content                      -->
+
+  <main class="container mb-5">
+    <div class="bg-light p-5 rounded mt-3" style="box-shadow: 2px 2px 2px 2px ;">
+      <h1 class="text-center text-light rounded" style="background-color: #444;">Vision</h1>
+      <p class="p-2 m-4" style="font-size: large;">To create knowledge based society with scientific temper through cutting-edge technologies, innovative research and to become valuable resource for enriching mankind.</p>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </main>
 
-
-  <!--                                    About Us Section                     -->
-  <section class="about py-5 bg-dark" style="margin: auto; ">
-    <div class="container">
-      <h2 class="heading-h2 text-center text-light" style="background-color: #444444;">POORNIMA INSTITTE OF ENGINEERING AND TECHNOLOGY</h2>
-      <div class="text-center"><svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon replaced-svg">
-  <rect width="54" height="5" fill="#2E3192"></rect>
-  </svg></div>
-
-      <div class="row pt-4">
-        <div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="3000">
-          <img src="images/about-img1.png" alt="about" class="img-fluid">
-        </div>
-        <div class="col-md-8 align-self-center pt-4 pt-md-0 aos-init aos-animate" data-aos="fade-left" data-aos-duration="3000">
-          <p class="text-center text-md-start mb-0 text-light" style="font-size: xx-large;">Poornima Institute of Engineering & Technology, was established in 2007 with the aim of imparting pragmatic technical
-             education. In its magnificent journey of 12 years, PIET has set benchmarks and reached at new pinnacles in Engineering Education with dedication, perseverance
-              and devotion. PIET is spearheading its outstanding voyage with the motto 'Success is not a destination, it's a journey'.</p>
-        </div>
-      </div>
+  <main class="container mb-5">
+    <div class="bg-light p-5 rounded mt-3" style="box-shadow: 2px 2px 2px 2px ;">
+      <h1 class="text-center text-light rounded" style="background-color: #444;">Mission</h1>
+      <ul class="p-2 m-4">
+        <li>To provide an environment that will allow students and faculty members to be skilled in creation and implementation of new ideas.</li>
+        <li>To provide platform to improve questioning, observing, testing, analyzing and communication skills.</li>
+        <li>Provide qualitative education and generate new knowledge with integration of emerging technologies and research.</li>
+        <li>To practice and promote high standard of potential ethics, transparency and accountability.</li>
+      </ul>
     </div>
-  </section>
-
-  <!--                                    Highlights Secton                                    -->
-  <div id="highlights" class="p-5 rounded mt-3" style="margin: 5vw; justify-content: center; display: grid; background-color: #fdfafa;">
-    <h1>Highlights</h1>
-    <div class="text-left"><svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon replaced-svg">
-      <rect width="54" height="5" fill="#2E3192"></rect>
-      </svg></div>
-      <ul style="list-style: none ;font-size: initial ;" class="highlight_points">            
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> State of Art of Infrastructure for innovative Teaching Pedagogy and ICT based learning</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Offering five streams of Engineering (CE, ECE, EE,ME &amp; Civil) at UG level.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Ranked 4th by Rajasthan Technical University under Quality Index Value Framework</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Accredited with NBA for B.Tech CSE &amp; B.Tech EE in 2018</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> NAAC Accredited institute from 2019</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Arbuda Convention Center: A Multimedia Auditorium with 500+ seating capacity.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> PBIC: The Entrepreneurship &amp; Innovation Cell</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Six Industries started by PIET students under entrepreneurship named as MADTY Trips, Rashion Baf, DIFF THINK Initiatives &amp; SHOPIENO.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Campus oriented for Techno Managers.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> IEEE, ISTE, IE (I) and ISLE Student chapters.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Organized workshops on various Technical and Non-Technical topics.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Completely Wi-Fi enabled campus.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Several projects sponsored by AICTE &amp; DST, Govt. of Rajasthan.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Collaboration with IBM for research on Business Intelligence and Cloud Computing.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Hands on Learning with Project Oriented Lab &amp; Non Syllabus Projects</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Focus on outcome based education with proper mapping through, CO's PO's, &amp; PSO's</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> More than 10 SCI/Scopus &amp; around 80 UGC Publications in 5 years</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Research Grants of more than 30 Lac in 5 years</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Regular and quality placements in all Major MNC's like Infosys, Capgemini. IBM, Adani, etc.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Industry oriented labs for quality education IBM, Oracle, FACE, Redhat, CESA etc.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Activities in association with NEN, AICTE, DST, RTU</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Regular conduct of National &amp; International Conference/Workshop/Seminar etc</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Students oriented activities through Clubs &amp; Student council</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Placement oriented initiatives for skill development and Outcome of quality placements</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Rigorous and transparent Continuous Internal Examination System</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Within in the ambit of University Syllabus, offering quality academic flexibility</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Tutor Mentor system for support &amp; Stress management</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Faculty Felicitation &amp; Reward system and similar systems for students</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Concerned for Environment &amp; sustainability, Waste Management, Rain Water Harvesting,</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Value Added courses &amp; Certification courses offered across all disciplines</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Well laid down Teaching Learning Process, with extreme focus of quality delivery</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Established ERP system for Feedback mechanism</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Catering to diverse category of students from all regions of nation</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Faculty members getting recognised at National &amp; International level</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Catering to society under CSR activities</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Facilities for Sports, Gymnasium, Cultural Activities, Auditorium</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Rich library with IEEE subscription</li>
-        <li><i class="fa fa-eercast" aria-hidden="true"></i> Quality hostel &amp; accommodation facility</li>
-
-
-    </ul>
-  </div>
-
-  <!--                    Notice section                      -->
-  <div class="bg-primary p-5 rounded mt-3" style="margin: 5vw; display: grid;">
-    <h1>Notice</h1>
-    <div class="text-left"><svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon replaced-svg">
-      <rect width="54" height="5" fill="black"></rect>
-      </svg></div>
-      <ul style="list-style: disclosure-closed ;font-size: initial ;" class="highlight_points">            
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-    </ul>
-  </div>
-
-  <!--                    Department section                   -->
-  <div class="dept bg-light rounded p-5">
-    <h1 class="text-center mb-5 text-decoration-underline">Departments</h1>
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <h3 class="mb-0">Computer Science</h3>
-            <div class="text-left"><svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon replaced-svg">
-              <rect width="54" height="5" fill="black"></rect>
-              </svg></div>
-            <p class="card-text mb-auto p-3">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="col-auto d-none d-lg-block" style="height: 17vh;">
-            <img src="images/cs dept.png" alt="CS" srcset="">
-            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <h3 class="mb-0">AI & DS</h3>
-            <div class="text-left"><svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon replaced-svg">
-              <rect width="54" height="5" fill="black"></rect>
-              </svg></div>
-            <p class="mb-auto p-3">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="col-auto d-none d-lg-block" style="height: 17vh;">
-            <img src="images/aids dept.png" alt="AI & DS" srcset="">
-            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <h3 class="mb-0">Computer Science</h3>
-            <div class="text-left"><svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon replaced-svg">
-              <rect width="54" height="5" fill="black"></rect>
-              </svg></div>
-            <p class="card-text mb-auto p-3">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="col-auto d-none d-lg-block" style="height: 17vh;">
-            <img src="images/cs dept.png" alt="CS" srcset="">
-            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <h3 class="mb-0">AI & DS</h3>
-            <div class="text-left"><svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon replaced-svg">
-              <rect width="54" height="5" fill="black"></rect>
-              </svg></div>
-            <p class="mb-auto p-3">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="col-auto d-none d-lg-block" style="height: 17vh;">
-            <img src="images/aids dept.png" alt="AI & DS" srcset="">
-            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </main>
 
   <!--                    Footer Section                       -->
   <section class="footer py-5 mb-4 mb-md-0" style="background-color: black; color: white;">
