@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS Deptartment</title>
+    <title>First Year Deptartment</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/cards.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
       @media screen and (min-width: 100px) and (max-width: 700px) {
         .navbar-brand{
@@ -23,6 +23,10 @@
         text-align: center;
       }
 
+      #highlights{
+        background-image: url('https://img.freepik.com/free-photo/abstract-blur-defocused-bookshelf-library_1203-9640.jpg?w=996&t=st=1683827576~exp=1683828176~hmac=d0fb2fca939164478e9c446e0f496df1e6f421b6ee4c31e95c94fd1c899476f3');
+      }
+
     </style>
 </head>
   <body>
@@ -33,7 +37,7 @@
         <div id="logo" class="row m-0 p-0">
           <div class="col-md-4 col-xxl-6 align-self-left">
             <a href="/" class="text-decoration-none">
-              <img src="/images/logopiet.png" alt="logo" style="width: 100%; max-width: 350px;" class="img-fluid">
+              <img src="images/logopiet.png" alt="logo" style="width: 100%; max-width: 350px;" class="img-fluid">
             </a>
           </div>
           <div class="col-md-8 col-xxl-6 text-end align-self-right">
@@ -64,131 +68,129 @@
     
 
   <!--                    Navbar                       -->
-<div class="stick" style="position: sticky; top: 0; z-index: 100;">
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
-    <div class="menu container-fluid">
-      <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll" style="padding-right: 3px;">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About Us
-            </a>
-            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item text-warning" href="/About/vission&mission.html">Vision & Mission</a></li>
-              <li><a class="dropdown-item text-warning" href="/About/Message.html">Messages</a></li>
-              <li><a class="dropdown-item text-warning" href="/About/Min-gc.html">Minutes of GC Meeting</a></li>
-              <li><a class="dropdown-item text-warning" href="/About/partners.html">Our Partners</a></li>
-              <li><a class="dropdown-item text-warning" href="/About/R&R.html">Rules & Regulations</a></li>
-              <li><a class="dropdown-item text-warning" href="#">Annual Report</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="#">Admissions</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Academics
-            </a>
-            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item text-primary" href="1styr.html">First Year Department</a></li>
-              <li><a class="dropdown-item text-primary" href="csdept.html">Computer Science Department</a></li>
-              <li><a class="dropdown-item text-primary" href="Aidsdept.html">AI-DS Department</a></li>
-              <li><a class="dropdown-item text-primary" href="IDEALAB.html">IDEA LAB Department</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="#">Training & Placement</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="#">Research & Innovation</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Life @ PIET
-            </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item text-primary" href="#">Events</a></li>
-              <li><a class="dropdown-item text-primary" href="#">Facilities</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="#">Students</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              IIC
-            </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item text-primary" href="#">IPR Cell</a></li>
-              <li><a class="dropdown-item text-primary" href="#">PBIC</a></li>
-              <li><a class="dropdown-item text-primary" href="#">IIC Events</a></li>
-              <li><a class="dropdown-item text-primary" href="#">Repositories</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="#">Alumni</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Accreditions
-            </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item text-primary" href="#">NBA</a></li>
-              <li><a class="dropdown-item text-primary" href="#">NAAC</a></li>
-              <li><a class="dropdown-item text-primary" href="#">NIRF</a></li>
-              <li><a class="dropdown-item text-primary" href="#"></a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <nav id="ai" class="navbar navbar-dark bg-secondary">
-    <div class="container-fluid text-center" style="font-size: x-large;">
-      <div style="text-align: center;">
-        <a id="heading" class="navbar-brand text-center" href="#">Artificial Intelligence and Data Science Department</a>
-      </div>      
-      <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="position: absolute; justify-content: left;">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" >Artificial Intelligence and Data Science Deptartment</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#About">About</a>
+  <div class="stick" style="position: sticky; top: 0; z-index: 100;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+      <div class="menu container-fluid">
+        <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll" style="padding-right: 3px;">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-warning" href="vission&mission.html">Vision & Mission</a></li>
+                <li><a class="dropdown-item text-warning" href="Message.html">Messages</a></li>
+                <li><a class="dropdown-item text-warning" href="Min-gc.html">Minutes of GC Meeting</a></li>
+                <li><a class="dropdown-item text-warning" href="partners.html">Our Partners</a></li>
+                <li><a class="dropdown-item text-warning" href="R&R.html">Rules & Regulations</a></li>
+                <li><a class="dropdown-item text-warning" href="#">Annual Report</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#HOD-Message">HOD Message</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Admissions</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Academics
+              </a>
+              <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-primary" href="1styr.html">First Year Department</a></li>
+                <li><a class="dropdown-item text-primary" href="csdept.html">Computer Science Department</a></li>
+                <li><a class="dropdown-item text-primary" href="Aidsdept.html">AI-DS Department</a></li>
+                <li><a class="dropdown-item text-primary" href="IDEALAB.html">IDEA LAB Department</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Achivement">Achivements</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Training & Placement</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Faculties">Faculties</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Research & Innovation</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Life @ PIET
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-primary" href="#">Events</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Facilities</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Labs">Labs</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Students</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                IIC
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-primary" href="#">IPR Cell</a></li>
+                <li><a class="dropdown-item text-primary" href="#">PBIC</a></li>
+                <li><a class="dropdown-item text-primary" href="#">IIC Events</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Repositories</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#IPR's">IPR's</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Alumni</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Accreditions
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-primary" href="#">NBA</a></li>
+                <li><a class="dropdown-item text-primary" href="#">NAAC</a></li>
+                <li><a class="dropdown-item text-primary" href="#">NIRF</a></li>
+                <li><a class="dropdown-item text-primary" href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+  
+    <nav id="ai" class="navbar navbar-dark bg-secondary" style="height: 7vh;">
+      <div class="container-fluid text-center" style="font-size: x-large;">
+        <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="position: absolute; justify-content: left;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Artificial Intelligence and Data Science Department</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#HOD-Message">HOD Message</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Achivement">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Faculties">Faculties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Labs">Labs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#IPR's">IPR's</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     </div>
-  </nav>
-
-</div>
+    <h2 class="heading-h2 text-center text-light" style="background-color: #444444; margin-top: 5px;">IDEA LAB Department</h2>
 
   <div id="About">
-    <img class="w-100 p-2" style="justify-content: center; margin: auto; margin-left: 5px;" src="/images/ai.png" alt="" srcset="">
+    <img class="w-100 p-2" style="justify-content: center; margin: auto; margin-left: 5px;" src="images/ai.png" alt="" srcset="">
     <h1 class="heading-h2 text-center text-light" style="background-color: black;">About</h1>
     <p style="text-align: justify; padding: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tenetur ipsam maiores nemo eaque consectetur nulla quos itaque suscipit architecto iure repellat laudantium quaerat voluptatibus debitis, tempore sint, consequuntur voluptates laboriosam temporibus aliquid reiciendis quam at consequatur! Similique in dignissimos doloremque consequatur tempora velit praesentium repudiandae minus neque, vero, natus aliquam dolor dolores iure quaerat unde accusantium sapiente accusamus quod, numquam optio quibusdam nihil. Corrupti consequatur dolorum voluptatibus beatae aut provident, repellendus, illo optio qui est, dolorem labore. Nisi voluptates nostrum dignissimos provident magnam vitae quia dolor repellat officia veritatis, perspiciatis iusto corporis minima, saepe aut accusamus neque cupiditate quas!</p>
   </div>
@@ -203,7 +205,7 @@
 
    <div class="row pt-4">
       <div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="3000" >
-        <img src="/images/hod.jpg" alt="about" class="img-fluid" style="border-radius: 50%;">
+        <img src="images/hod.jpg" alt="about" class="img-fluid" style="border-radius: 50%;">
         <h2 class="text-primary" style="text-align: center;">Name</h2>
         <h3 class="text-primary" style="text-align: center;">HOD, Dept name</he>
       </div>
@@ -215,32 +217,35 @@
     </section>
   </div>
 
-  <div id="Achivement" class="p-5 rounded mt-3" style="margin: 5vw; justify-content: center; display: grid; background-color: #fdfafa; background: url(images/ach.jpg); background-size: cover; background-repeat: no-repeat;">
+  <div id="highlights" class="p-5 rounded mt-3" style="margin: 5vw; justify-content: center; display: grid; background-color: #fdfafa;">
     <h1>Achivements</h1>
     <div class="text-left"><svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon replaced-svg">
       <rect width="54" height="5" fill="#2E3192"></rect>
       </svg></div>
       <ul style="list-style: none ;font-size: initial ;" class="highlight_points">            
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> State of Art of Infrastructure for innovative Teaching Pedagogy and ICT based learning</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Offering five streams of Engineering (CE, ECE, EE,ME &amp; Civil) at UG level.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Ranked 4th by Rajasthan Technical University under Quality Index Value Framework</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Accredited with NBA for B.Tech CSE &amp; B.Tech EE in 2018</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> NAAC Accredited institute from 2019</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Arbuda Convention Center: A Multimedia Auditorium with 500+ seating capacity.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> PBIC: The Entrepreneurship &amp; Innovation Cell</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Six Industries started by PIET students under entrepreneurship named as MADTY Trips, Rashion Baf, DIFF THINK Initiatives &amp; SHOPIENO.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Campus oriented for Techno Managers.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> IEEE, ISTE, IE (I) and ISLE Student chapters.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Organized workshops on various Technical and Non-Technical topics.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Completely Wi-Fi enabled campus.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Several projects sponsored by AICTE &amp; DST, Govt. of Rajasthan.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Collaboration with IBM for research on Business Intelligence and Cloud Computing.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Hands on Learning with Project Oriented Lab &amp; Non Syllabus Projects</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Focus on outcome based education with proper mapping through, CO's PO's, &amp; PSO's</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> More than 10 SCI/Scopus &amp; around 80 UGC Publications in 5 years</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Research Grants of more than 30 Lac in 5 years</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Regular and quality placements in all Major MNC's like Infosys, Capgemini. IBM, Adani, etc.</li>
-        <li><i class="fa fa-eercast" aria-hidden="true" style="font-size: larger;"></i> Industry oriented labs for quality education IBM, Oracle, FACE, Redhat, CESA etc.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> State of Art of Infrastructure for innovative Teaching Pedagogy and ICT based learning</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Offering five streams of Engineering (CE, ECE, EE,ME &amp; Civil) at UG level.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Ranked 4th by Rajasthan Technical University under Quality Index Value Framework</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Accredited with NBA for B.Tech CSE &amp; B.Tech EE in 2018</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> NAAC Accredited institute from 2019</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Arbuda Convention Center: A Multimedia Auditorium with 500+ seating capacity.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> PBIC: The Entrepreneurship &amp; Innovation Cell</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Six Industries started by PIET students under entrepreneurship named as MADTY Trips, Rashion Baf, DIFF THINK Initiatives &amp; SHOPIENO.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Campus oriented for Techno Managers.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> IEEE, ISTE, IE (I) and ISLE Student chapters.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Organized workshops on various Technical and Non-Technical topics.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Completely Wi-Fi enabled campus.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Several projects sponsored by AICTE &amp; DST, Govt. of Rajasthan.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Collaboration with IBM for research on Business Intelligence and Cloud Computing.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Hands on Learning with Project Oriented Lab &amp; Non Syllabus Projects</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Focus on outcome based education with proper mapping through, CO's PO's, &amp; PSO's</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> More than 10 SCI/Scopus &amp; around 80 UGC Publications in 5 years</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Research Grants of more than 30 Lac in 5 years</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Regular and quality placements in all Major MNC's like Infosys, Capgemini. IBM, Adani, etc.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Industry oriented labs for quality education IBM, Oracle, FACE, Redhat, CESA etc.</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Activities in association with NEN, AICTE, DST, RTU</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Regular conduct of National &amp; International Conference/Workshop/Seminar etc</li>
+        <li><i class="fa fa-eercast" aria-hidden="true"></i> Students oriented activities through Clubs &amp; Student council</li>
     </ul>
   </div>
 
