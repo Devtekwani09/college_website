@@ -88,7 +88,7 @@ float: inline-end;
   } */
 
   #preloader{
-    background: #000 url(images/preloader.gif) no-repeat center center;
+    background: #000 url(/images/preloader.gif) no-repeat center center;
     background-size: 70%;
     height: 100vh;
     width: 100%;
