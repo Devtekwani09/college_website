@@ -138,4 +138,11 @@ float: inline-end;
   button#scrollToTopBtn:hover {
     background-color: #0056b3;
   }
-  
+
+  .logo-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: solid 1px black;
+  }
