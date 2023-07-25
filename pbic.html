@@ -1,0 +1,1928 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IIC Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @media screen and (min-width: 100px) and (max-width: 700px) {
+        .navbar-brand{
+          display: none;
+        }
+
+        #ai{
+          height: 6vh;
+        }
+      }
+
+      #headind{
+        text-align: center;
+      }
+
+
+      #highlights{
+        background-image: url('https://img.freepik.com/free-photo/abstract-blur-defocused-bookshelf-library_1203-9640.jpg?w=996&t=st=1683827576~exp=1683828176~hmac=d0fb2fca939164478e9c446e0f496df1e6f421b6ee4c31e95c94fd1c899476f3');
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+</head>
+  <body>
+    <div id="preloader"></div>
+    <button id="scrollToTopBtn">Scroll to Top</button>
+    <!--                  Header                       -->
+    <section class="top d-md-block">
+      <div class="container">
+        <div id="logo" class="row m-0 p-0">
+          <div class="col-md-4 col-xxl-6 align-self-left">
+            <a href="/" class="text-decoration-none">
+              <img src="images/logopiet.png" alt="logo" style="width: 100%; max-width: 350px;" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-8 col-xxl-6 text-end align-self-right">
+            <ul class="nav float-md-end">
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2"><a class="text-light text-decoration-none" href="index.html">Home</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">E-Library</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">ERP</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">Feedback</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">IQAC</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">Contact</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  <!--                    Navbar                       -->
+<div class="stick" style="position: sticky; top: 0; z-index: 100;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+    <div class="menu container-fluid">
+      <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll" style="padding-right: 3px;">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-warning" href="vission&mission.html">Vision & Mission</a></li>
+              <li><a class="dropdown-item text-warning" href="history.html">History</a></li>
+              <li><a class="dropdown-item text-warning" href="Message.html">Messages</a></li>
+              <li><a class="dropdown-item text-warning" href="Min-gc.html">Minutes of GC Meeting</a></li>
+              <li><a class="dropdown-item text-warning" href="partners.html">Our Partners</a></li>
+              <li><a class="dropdown-item text-warning" href="advisory.html">Advisory Board</a></li>
+              <li><a class="dropdown-item text-warning" href="gpverningcouncil.html">Governing Council</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Administration
+            </a>
+            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-warning" href="Organogram.html">Organogram</a></li>
+              <li><a class="dropdown-item text-warning" href="\">campus Team</a></li>
+              <li><a class="dropdown-item text-warning" href="R&R.html">Rules & Regulations</a></li>
+              <li><a class="dropdown-item text-warning" href="A&A.html">Affiliation & Approvals</a></li>
+              <li><a class="dropdown-item text-warning" href="AFS.html">Audited Statement</a></li>
+              <li><a class="dropdown-item text-warning" href="OBE.html">Process of OBE</a></li>
+              <li><a class="dropdown-item text-warning" href="#">Annual Report</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Admissions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Academics
+            </a>
+            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="1styr.html">First Year Department</a></li>
+              <li><a class="dropdown-item text-primary" href="csdept.html">Computer Science Department</a></li>
+              <li><a class="dropdown-item text-primary" href="Aidsdept.html">AI-DS Department</a></li>
+              <li><a class="dropdown-item text-primary" href="IDEALAB.html">IDEA LAB Department</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Training & Placement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Research & Innovation</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Life @ PIET
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="#">Events</a></li>
+              <li><a class="dropdown-item text-primary" href="#">Facilities</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Students</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              IIC
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="#">IPR Cell</a></li>
+              <li><a class="dropdown-item text-primary" href="pbic.html">PBIC</a></li>
+              <li><a class="dropdown-item text-primary" href="iicevents.html">IIC Events</a></li>
+              <li><a class="dropdown-item text-primary" href="#">Repositories</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Alumni</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Accreditions
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="#">NBA</a></li>
+              <li><a class="dropdown-item text-primary" href="#">NAAC</a></li>
+              <li><a class="dropdown-item text-primary" href="#">NIRF</a></li>
+              <li><a class="dropdown-item text-primary" href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  
+    <div class="container my-4">
+      <h1 class="text-center text-light rounded" style="background-color: #444;">PBIC Event</h1>
+  
+      <div class="text-center"><img src="images/pbic/image1.jpg" alt="" width="100%"></div>
+  
+      <p><b>Poornima Business Incubation Centre (PBIC)&nbsp;</b><span>is the
+          venture arm of&nbsp;</span><b>Poornima Institute of Engineering &amp; Technology
+          (PIET)&nbsp;</b><span>nurtures and fosters incubation of startups. It is an incubation centre
+          for startups whose objectives are to cultivate and promote entrepreneurism among talented youth, students
+          and experienced alike. Anyone with an idea and unflinching determination to give it a shape is an ideal
+          candidate to associate with PBIC. Poornima Business Incubation Centre (PBIC) is set up to promote innovation
+          and entrepreneurship by converting and translating technology ideas and innovation in various disciplines of
+          science and engineering into products, processes and services for commercial exploitation and for the
+          benefit of society. PBIC offers incubation facilities and services to prospective entrepreneurs to their
+          innovative ideas into commercially viable products. PBIC provides certain facilities like physical
+          infrastructure and support systems necessary for business incubation activities, Services such as training
+          or High- speed Internet access, links to higher education resources, accounting and financial management
+          etc. It facilitates networking with professional resources, which include mentors, experts, consultants and
+          advisors for the incubates. PBIC also conducts events like entrepreneurial talk series, workshops, open
+          pitches and seminars to offer a good interface and visibility in the region.&nbsp;</span><span>Poornima
+          Institute of Engineering &amp; Technology&nbsp;</span><span>has been
+          supporting the new budding Entrepreneurs since 2014 through a club which was known as E-cell and which is
+          now working in coordination with PBIC.</span></p>
+  
+      <h4>OBJECTIVE :</h4>
+      <p><span>Poornima Business Incubation Centre (PBIC) is set up :</span></p>
+      <ul>
+        <li><span>To create awareness on entrepreneurship among the students.</span>
+        </li>
+        <li><span>To inculcate entrepreneurial spirit and culture among the Science
+            and Engineering &nbsp;graduates </span></li>
+        <li><span>To conduct programs in Entrepreneurship &nbsp;enabling
+            &nbsp;skills.</span></li>
+        <li><span>To promote innovation and entrepreneurship .</span></li>
+      </ul>
+  
+      <h4>Eligibility:</h4>
+      <p><span>Admission to PBIC is open to any of the following :</span></p>
+      <ul>
+        <li><span>Students &amp; Alumni of Poornima Group</span></li>
+        <li><span>Poornima Group's R&amp;D partners (sponsors of R&amp;D and
+            consultancy projects),</span></li>
+        <li><span>Poornima Group's partner universities (having R&amp;D
+            collaborations in place) and government agencies associated with Poornima Group's research and
+            innovations.</span></li>
+        <li><span>Permanent staff of Poornima Group</span></li>
+        <li><span>PBIC alumni on selective basis.</span></li>
+        <li><span>Applicants supported under any program managed by PBIC.</span>
+        </li>
+      </ul>
+  
+  
+      <div style="overflow-x: auto;" class="w-100 text-center my-2">
+        <h2 class="text-center">Structure of PBIC</h2>
+        <table class="w-100 text-center">
+          <tbody><tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Dr. Ajay Maurya</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PBIC Faculty Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr. Gaurav Prajapat</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PBIC Student Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr. AnkitKhemani</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PBIC Student Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Dr. Gautam Singh</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PBIC Campus Coordinator, PIET</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Dr. Mukesh Chandra</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PBIC Campus Coordinator, PIET</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr. Deepak Moud</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PBIC Campus Coordinator, PIET</span></p>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  
+      <h2 class="text-center my-3">Details Of Facilities</h2>
+  
+      <h5><span>Physical infrastructure:</span></h5>
+      <ul>
+        <li><span>Fully furnished Office Space</span></li>
+        <li><span>Shared resources: Meeting rooms, Conference rooms.</span></li>
+        <li><span>Office productivity equipment: Fax, Photocopier, Printer,
+            Scanner, Projector</span></li>
+        <li><span>Lab: PBIC Lab with Equipment and software tools, Facilitation for
+            access to PIET Labs</span></li>
+      </ul>
+      <h5><span>Innovation Support</span></h5>
+      <ul>
+        <li><span>IPR Registration and examination for the start-ups is also
+            facilitated by PIET-PBIC at no cost.</span></li>
+      </ul>
+      <h5><span>Utility:</span></h5>
+      <ul>
+        <li><span>Electricity</span></li>
+        <li><span>Internet</span></li>
+      </ul>
+      <h5><span>&nbsp;(# No cost for electricity/internet consumption or any utility or service
+          is charged separately to the Incubates. However, Incubator retains a right to limit the free
+          electricity/internet consumption and other utility, beyond which charges will become payable by the
+          Incubate.)</span></h5>
+  
+      <div class="text-center my-3"><img src="images/pbic/image3.png" width="100%"></div>
+  
+  
+      <h3 class="text-center my-5"><span>PBIC has extended the facility with new co-working space for around 15-20
+          start-ups (from April 2023):</span></h3>
+  
+  
+      <div class="text-center my-3"><img src="images/pbic/image2.jpg" width="100%"></div>
+  
+      <div style="overflow-x: auto;" class="w-100 text-center my-2">
+        <h2 class="text-center my-5"><span>List of Startups Registered in PBIC</span></h2>
+        <table class="w-100 text-center">
+          <tbody><tr>
+            <td colspan="1" rowspan="1">
+              <p><span>S.No. </span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Startup Name</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Student Name</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Phone number</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Year</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Theta Electronics</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Ajay Saini</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9314226135</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2018</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>RashanBag</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>ShubhamKhandelwal</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9772110285</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2018</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>3</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Writer's Voice Society</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Ram KinkarTripathi</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9649676563</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2018</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>4</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Tinkers Town</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Ravi Suthar</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>7425967157</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2018</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>5</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>NamasteSir.com</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Nitin Jindal</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8952834418</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2018</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>6</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>REGOOLUR PRODUCT AND TECHNOLOGIES PRIVATE LIMITED</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Tanya Kumawat</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>7742481873</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2018</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>7</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>M/s. BREADNBUTTER TECH</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>SakshamSaxena</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>7230093372</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2019</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>8</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>READINGBOX.IN</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Amit Jangid</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8440902650</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2019</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>9</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>TECHNOBUILD PRIVATE LIMITED</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>AbhishekParashar</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9950890635</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2019</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>10</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Auxicuix Consultancies LLP</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Abhinav Tiwari</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>7976178647</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2020</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>11</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>olxtech (Bech Do)</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>YashSaxena</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8890170172</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2020</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>12</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Digital Darzi</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>HimanshuHingorani</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>7014648668</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2021</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>13</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Book of Youth</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PriyanshiGoyal</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9461233742</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2021</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>14</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Local Eyes</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>YuvrajDagur</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8949090660</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2021</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>15</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>The Engineers Cafe</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Amit Jangid</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8440902650</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2021</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>16</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PIE Star Interactive Studio</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Vikash Sharma</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9214993678</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2021</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>17</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>KanhaJi Handicrafts</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Gaurav Prajapat</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>7427022709</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2022</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>18</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Rent N Earn</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>AnkitKhemani</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9057599584</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2022</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>19</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Aerophantom</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Rahul Sharma</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9509206534</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2022</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>20</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>CAFTRO</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Sourav Sharma</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8239753202</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2023</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>21</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>REP-X</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>NITESH SHARMA</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8690643265</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2023</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>22</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>MOOONTECH</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Jeki Panchal</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8209023368</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2023</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>23</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Devils Honey </span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Abhinav Tiwari </span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>7976178647</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2023</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>24</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Bitesfly</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Bhavya Agarwal</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8290999582</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2023</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>25</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>V-gthr</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Dhruv Sharma</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9079907146</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>2023</span></p>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  
+  
+  
+  
+  
+  
+  
+    
+      <div style="overflow-x: auto;" class="w-100">
+        <h2 class="text-center my-5"><span>PBIC Events / Activities Year wise</span></h2>
+        <table class="w-100 text-center">
+          <tbody><tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Session</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>S. No.</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Activity Details</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>No. of Participants</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>organized / Planned on</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Name of experts</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="12">
+              <p><span>2022-23</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Innovation and Entrepreneurship-G 20</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>350</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>May 18, 2023</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1. Paresh Gupta, 6 times TEDxSpeaker , Founder - CUETPro | GCEC |
+                  Brevitty |, Youth Mentor, Advisor and Motivator<br> 2. Arun Kumar, Co-founder &amp; Chief
+                  Operations Officer, Sincgrid Delhi<br> 3. Abhayjeet Singh, Chief Academic Officer at
+                  ImaginXP<br> 4. Prof. Trilok Kumar Jain, Dean of Management programmes, GyanVihar
+                  University</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>5 Startup participated at Rajasthan IT Day, Jaipur (startup expo by Govt.
+                  of Rajasthan)</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>15</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>March 19-21, 2023</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>iStart Rajasthan</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>3</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>PoornimaHackathon- 2023</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1800</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>March 3-4, 2023</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Poornima Institute of Engg. &amp; Technology, Jaipur</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>4</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session on "Entrepreneurship Skill, Attitude and Behaviour
+                  Development"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>80</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>March 11, 2023</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>MeetaMathur, Director, TaanyaKrafts Pvt. Ltd.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>5</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;session on" ENTREPRENEURSHIP The Real world, Challenges &amp;
+                  The Road Ahead (An Insider View)</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>150</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>February 6, 2023</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>RaghavTotla, Director, Prime Telelink Pvt. Ltd.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>6</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Participation at National Startup Day </span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>25</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>January 16, 2023</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Atal Incubation Center, JKLU</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>7</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>session on &nbsp;"How to become a successful
+                  Entrepreneur"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>70</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>December 10, 2022</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr. Abhishek Gupta, Assistant Manager Investment at CIIE.CO</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>8</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Success Story by Incubate ( Startup - RentNEarn)</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>250</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>December 9, 2022</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>AnkitKhemani</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>9</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>5 Startup participated at Digifest Jodhpur (startup expo by Govt. of
+                  Rajasthan)</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>10</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>November 11-13, 2022</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Digifest-2022, Govt. of Rajasthan</span></p>
+            </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+            <td colspan="1" rowspan="14">
+              <p><span>2021-22</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Why, What and how of patents</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>27/10/2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Ms. LatikaKhanduja, Founder IPOLEA</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Role of " Entrepreneurship and Innovation " in your success
+                  story</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>31/1/2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Dr. HrishikeshDhamle, MD &amp; CEO Atrimed Pharmaceuticals | Trustee,
+                  Save a Mother Foundation, Atrimed Healthcare Foundation|Founder - Atrimed Biotech</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>3</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Expert Talk on " Process of Innovation Development &amp; Technology
+                  Readiness Level(TRL)" &nbsp;&amp; " Commercialisation of Lab Technology &amp; Tech-
+                  Transfer"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>January 10, 2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Er. LoveneeshTalwar, Yoganand College of Engineering, Jammu</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>4</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session &nbsp;on "Entrepreneurship skills, Attitude, and Behavior
+                  development"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>February 19, 2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Dr. Ramesh Mittal, Director National Institute of Agriculture
+                  Marketing</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>5</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session On "Achieving problem solution fit and product market
+                  fit"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>22/2/2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>M S SATYANARAYANA</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>6</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session On "Ideation to legal protection of an
+                  Invention"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>22/2/2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Dr. SelladuraiMuthusamy</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>7</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session On "Ideas are easy implementation is hard"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>23/2/2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Dr. Ashu Jain</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>8</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session On "Achieving Problem Solution Fit &amp; Product Market
+                  Fit"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>February 23, 2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Dr. Sabahat Fatima, Assistant Professor, Department of Commerce &amp;
+                  Business Management, Integral University, Sr. Faculty &amp; Program Coordinator, Financial
+                  Services, iNurture Education Solutions, Bangalore.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>9</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Expert Session On &nbsp;"IP Awareness &amp; Filing
+                  Process"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>26-Apr-22</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Mr. Shailendra Singh, Examiner of Patents and Designs</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>10</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session On "Entrepreneurial communication skills"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>17/5/2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Dr. Ashu Jain</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>11</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session -Entrepreneurship In 21st Century </span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>27/5/2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>DrVivekBindra</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>12</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>“Campus Entrepreneur Master Class”&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Founder – Bada Business&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>13</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>SESSION ON HOW TO BUILD A STARTUP FROM BOTTOM TO TOP</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>10/6/2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Mr. Devendra Sharma, CEO of OLE ROOMS</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>14</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Session on "Achieving Value Proposition Fit &amp; Business
+                  Fit"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>June, 11 2022</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Dr. Leena Sharma, HOD &amp; Sr. Assistant Professor, Department of
+                  Management, St. Xavier's College, Jaipur</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="11">
+              <p><span>Year 2020-21</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>RTU(ATU) TEQIP III sponsored&nbsp;Industry Expert&nbsp;session
+                  on&nbsp;</span><span>The Game has Changed: Crafting a career in "New
+                  Normal"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>140</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>13-1-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Business Communication &amp; Leadership Skills for Startups</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>127</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>20-1-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;ONLINE</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>3</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>INTELLECTUAL PROPERTY RIGHTS - 2021</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>98</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>23-1-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>4</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;RTU(ATU) TEQIP III sponsored session
+                  on&nbsp;&nbsp;"&nbsp;VUCA world &amp; the competencies needed to thrive</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>183</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>27-1-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>5</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;RTU(ATU) TEQIP III sponsored session
+                  on&nbsp;&nbsp;"&nbsp;Minimalism and how can it empower one financially"</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>120</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>27-2-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>6</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>&nbsp;RTU(ATU) TEQIP III sponsored session
+                  on&nbsp;&nbsp;"Earthquake and prevention techniques in building construction"</span>
+              </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>40</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>27-2-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>7</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Webinar on The Journey of a thesis of a research paper to a patent</span>
+              </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>120</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>9-2-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>8</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Webinar on awareness session on Intellectual property rights, patent and
+                  Trademarks</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>164</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>14-7-2020</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>9</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>RTU(ATU) TEQIP III sponsored&nbsp;Industry Expert&nbsp;session
+                  on&nbsp;Setting up and growing business venture</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>110</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>22-3-2021 to 23-3-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>10</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>RTU-POORNIMA HACKATHON 2021</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1700</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>22-3-2021 to 24-03-2021</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>ONLINE</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>11</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Webinar on “Placement scenario and prospects in COVID
+                  Pandemic”</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>60</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>30-11-2020</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="3">
+              <p><span>2019-20</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>“Innocity Entrepreneurship
+                  Bootcamp&nbsp;“3-day&nbsp;program&nbsp;organized&nbsp;by </span><span>Startup
+                  Oasis</span><span>&nbsp;in association
+                  with&nbsp;</span><span>Innocity</span><span>&nbsp;and&nbsp;</span><span>GensusEdutainers</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>25</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>July 25-27, 2019</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Startup Chaupal “startup talk” in association with
+                </span><span>GensusEdutainers</span><span>, Jaipur</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>250</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>July 15, 2019</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>3</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Executed first accelerator program of Poornima group, named as
+                  ‘Genstart’.&nbsp;</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>50</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>October 12, 2019</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="8">
+              <p><span>Year 2018-19</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>EAD-18 ( Entrepreneurship Awareness Drive-2018) Supported by
+                  e-cell,IITkharagpur</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>400-500</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Oct-18</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>IEEE sponsored &amp; AICTE approved &nbsp;Workshop &nbsp;on Financial
+                  Literacy</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>220</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>20-Dec-18</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>3</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Entrepreneur Talk by &nbsp;Prof. Samish Dalal, Associate Professor
+                  &nbsp;&amp;Administator, Global FMB Program, SP Jain Institute of Management &amp; Research, and
+                  TEDX Speaker</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>450</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>25/1/2019</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>ONLINE</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>4</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Student Interaction with RFC(Rajasthan Finance Corporation,RIICO office)
+                  regarding YuvaUdymitaProtsaahanYojna</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>20</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>13/2/2019</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>5</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>"Prayag" a contest to promote Entrepreneurship among
+                  students</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>All Departments of PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Nov-18</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>6</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>India First Leadership Talk Series ( Session by Shri Anand Mahindra,
+                  Chairman, Mahindra Group, organised by MHRD Innovation cell)</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>360</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>8-Jan-19</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Online</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>7</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Introduction to Intellectual Property Rights( Session by
+                  MsShwetasreeMajumder (Principle, Fidus Law Chamber), organised by MHRD Innovation cell)</span>
+              </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>354</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>10-Jan-19</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Online</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>8</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>India First Leadership Talk Series ( Session by Dr. Anand Deshpande,
+                  Founder, Chairman &amp; Managing Director Persistent Systems Ltd, organised by MHRD Innovation
+                  cell)</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>358</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>21/1/19</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>Online</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="2">
+              <p><span>Year 2017-18</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Start Up Meet organised by E-Cell, PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Ecell Members</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>3-Oct-17</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>UDYAMITA-2K18 Organised by E-cell, PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>All Departments of PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>20th Feb, 2018-28th Feb, 2018</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;ONLINE</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="3">
+              <p><span>Year 2016-17</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Entrepreneur Talk by Mr. PranayMathur, (Founder &amp; CEO,
+                  WeDigTechSolutionsPvt Ltd. Jaipur) ,And &nbsp;Mr. Sumit Srivastava, (Founder, GENSUS DESIGN
+                </span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>For &nbsp;All Students</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>20th Feb, 2017</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Entrepreneur Talk by Shree Subhash Saini (Chairman &amp; Founder,
+                  Gurupragya Group, Jaipur)</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>For all Students</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>28th Feb, 2017</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>3</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Three days Entrepreneurship activity held at PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>For all Students</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>4 January, 2017;</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="2">
+              <p><span>Year 2015-16</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Institute Interaction with Japanese Industrial Zone, Neemrana with Mr.
+                  DheerajYadav Human Resources and Admin, Dainichi Color India Pvt. Ltd., and &nbsp;Mr. Syed
+                  SammarAbbasSenior Manager - General Affairs, Sales and Marketing, Koide India Private
+                  Limited</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Selected students from all Departments of PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>16 October 2015,</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>ONLINE</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Industry Institute Interaction at StartUpOasis,Mr. Anugrah Sharma,
+                  Coordinator, Student<br>Incubation Program, StartUp Oasis,</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Selected students from all Departments of PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>18th September, 2015</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="2">
+              <p><span>Year 2014-15</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>1</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Interaction with Mr. Dilnawaz khan, Business development and programme
+                  coordinator, STARTUP OASIS and guest of honour, MR. Keshavbansal , director, bansal elastomers
+                  pvt ltd.-</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Selected students from all Departments of PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Nov-14</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>ONLINE</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>2</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Workshop on Innovation, Sustainability and Leadership </span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Selected students from all Departments of PIET</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>29th January, 2015</span></p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p><span>&nbsp;</span></p>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  
+  
+  
+  
+  </div>
+  
+  
+   <!--                    Footer                       -->
+   <section class="footer py-5 mb-4 mb-md-0" style="background-color: black; color: white;">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-4 py-3 py-md-0">
+                <h2 class="sub-heading text-light">About</h2>
+
+                <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg text-light">
+                     <rect width="54" height="5" fill="#2E3192"></rect>
+                </svg>
+                <div class="pt-1 pt-md-3 text-light">
+                  <ul style="list-style: disclosure-closed ;font-size: initial ;" class="highlight_points">
+                    <li> <a href="public/documents/mandatory-disclosure.pdf" style="text-decoration: none; color: white;"> Mandatory Disclosure </a></li>
+                    <li> <a href="" style="text-decoration: none; color: white;">Privacy Policy </a></li>
+                    <li> <a href="" style="text-decoration: none; color: white;"> Vacancy </a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <h2 class="sub-heading text-light">SOCIAL LINKS</h2>
+
+                <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg text-light">
+                     <rect width="54" height="5" fill="#2E3192"></rect>
+                </svg>
+                <div id="links" class="pt-1 pt-md-3 text-light">
+                  <a href="#" class="fa fa-facebook text-light"></a>
+                    <a href="#" class="fa fa-instagram text-light"></a>
+                    <a href="#" class="fa fa-linkedin text-light"></a>
+                    <a href="#" class="fa fa-twitter text-light"></a>
+                    <a href="#" class="fa fa-youtube text-light"></a>
+                </div>
+                <p class="link-clr pt-4 text-light">© 2023. All Rights Reserved.</p>
+            </div>
+
+            <div class="col-md-4">
+              <h2 class="sub-heading text-light">CONTACT US</h2>
+              <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg">
+                   <rect width="54" height="5" fill="#2E3192"></rect>
+              </svg> <br>
+              <div class="pt-1 pt-md-3">
+                  <a href="https://goo.gl/maps/VFyi5L9ts9qGJvtA6" class="text-decoration-none f-text text-light">
+                      Poornima Group, ISI 6 &amp; 2, RIICO Institutional Area Sitapura, Jaipur - 302022
+                  </a>
+              </div>
+                <ul class="p-0 list-unstyled pt-3">
+                  <li>
+
+                      <a href="tel:+91-9928555222" class="text-decoration-none f-text text-light"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                        <g clip-path="url(#clip0_122_338)">
+                          <path d="M15.5574 11.2841L12.3574 9.68408C12.2072 9.60912 12.0373 9.58331 11.8716 9.6103C11.7059 9.63729 11.5529 9.71572 11.4343 9.83448L10.0943 11.1745C8.1687 10.8649 5.13433 7.8313 4.82554 5.90573L6.16552 4.56575C6.28428 4.4471 6.36271 4.29411 6.3897 4.12842C6.41669 3.96274 6.39088 3.79276 6.31592 3.64256L4.71594 0.442598C4.66356 0.337707 4.58877 0.245611 4.49686 0.172828C4.40495 0.100044 4.29816 0.0483516 4.18406 0.0214096C4.06996 -0.00553233 3.95133 -0.00706554 3.83657 0.0169185C3.7218 0.0409025 3.61372 0.0898175 3.51996 0.160201L0.319996 2.56017C0.22064 2.63469 0.139999 2.73131 0.0844571 2.8424C0.0289156 2.95348 0 3.07597 0 3.20016C0 10.8561 5.14394 16 12.7998 16C12.924 16 13.0465 15.9711 13.1576 15.9155C13.2687 15.86 13.3653 15.7794 13.4398 15.68L15.8398 12.48C15.9102 12.3863 15.9591 12.2782 15.9831 12.1634C16.0071 12.0487 16.0055 11.93 15.9786 11.8159C15.9516 11.7018 15.9 11.5951 15.8272 11.5031C15.7544 11.4112 15.6623 11.3364 15.5574 11.2841Z"></path>
+                          <path d="M9.19989 1.59998C10.5785 1.60167 11.9001 2.15007 12.8749 3.12488C13.8497 4.09969 14.3981 5.42133 14.3998 6.79991C14.3998 7.01208 14.4841 7.21556 14.6341 7.36559C14.7842 7.51562 14.9876 7.5999 15.1998 7.5999C15.412 7.5999 15.6155 7.51562 15.7655 7.36559C15.9155 7.21556 15.9998 7.01208 15.9998 6.79991C15.9977 4.99711 15.2806 3.26876 14.0058 1.99399C12.731 0.719215 11.0027 0.00211721 9.19989 0C8.98772 0 8.78424 0.0842844 8.63421 0.234312C8.48419 0.384339 8.3999 0.587819 8.3999 0.79999C8.3999 1.01216 8.48419 1.21564 8.63421 1.36567C8.78424 1.5157 8.98772 1.59998 9.19989 1.59998Z"></path>
+                           <path d="M9.19989 4.80018C9.73032 4.80018 10.239 5.01089 10.6141 5.38595C10.9892 5.76102 11.1999 6.26972 11.1999 6.80015C11.1999 7.01232 11.2842 7.2158 11.4342 7.36583C11.5842 7.51586 11.7877 7.60014 11.9999 7.60014C12.212 7.60014 12.4155 7.51586 12.5655 7.36583C12.7156 7.2158 12.7998 7.01232 12.7998 6.80015C12.7998 5.84538 12.4206 4.92972 11.7454 4.2546C11.0703 3.57948 10.1547 3.2002 9.19989 3.2002C8.98772 3.2002 8.78424 3.28448 8.63421 3.43451C8.48419 3.58453 8.3999 3.78801 8.3999 4.00019C8.3999 4.21236 8.48419 4.41584 8.63421 4.56586C8.78424 4.71589 8.98772 4.80018 9.19989 4.80018Z"></path>
+                       </g>
+                      <defs>
+                      <clipPath id="clip0_122_338">
+                           <rect width="16" height="16"></rect>
+                       </clipPath>
+                       </defs>
+                      </svg> +91-9928555222
+                      </a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="https://api.whatsapp.com/send?text=Hi!+I+have+an+enquiry&amp;phone=%20+91-9928666222" class="text-decoration-none f-text text-light">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                           <path d="M8.00031 0.0230633C3.59998 0.0230633 0.0232299 3.60323 0.0232299 8.00015C0.0232299 9.46477 0.422136 10.8911 1.18149 12.1355L0.0391272 15.5591C0.000799078 15.674 0.029512 15.7984 0.11565 15.8846C0.176279 15.9452 0.259212 15.9771 0.342279 15.9771C0.3774 15.9771 0.409318 15.9739 0.444443 15.9612L3.86495 14.8221C5.1124 15.5784 6.53869 15.9771 8.00033 15.9771C12.4007 15.9771 15.9774 12.4004 15.9774 8.00004C15.9774 3.60312 12.4003 0.0229492 8.00033 0.0229492L8.00031 0.0230633ZM13.1056 11.2296C13.1056 11.5072 12.9908 11.7816 12.7928 11.9794L11.9632 12.7995C11.7654 12.9973 11.4974 13.1058 11.223 13.1058H11.1815C6.72369 12.9142 3.08609 9.2767 2.89464 4.82234C2.88182 4.53201 2.9936 4.24474 3.20099 4.03735L4.02109 3.20775C4.21888 3.00996 4.4933 2.89511 4.77415 2.89511H5.08051C5.5176 2.89511 5.91651 3.16955 6.0697 3.58113L6.79726 5.51156C6.93762 5.88803 6.85148 6.31884 6.57397 6.61238L6.27402 6.92821C6.13674 7.07178 6.12085 7.29201 6.23249 7.45464C6.60268 7.99071 7.39396 9.0022 8.549 9.78076C8.70859 9.88613 8.92562 9.8669 9.06596 9.73295L9.39141 9.42659C9.68174 9.14895 10.1126 9.0628 10.489 9.20317L12.4194 9.93072C12.831 10.0871 13.1055 10.4828 13.1055 10.9199L13.1056 11.2296Z"></path>
+                          </svg> +91-9928666222
+                      </a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="mailto:info@poornima.org" class="text-decoration-none f-text text-light" target="_blank">
+                          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                          <g clip-path="url(#clip0_122_349)">
+                              <path d="M8 6.65143L0.977143 0.171429C1.20702 0.0600838 1.45887 0.00151367 1.71429 0H14.2857C14.5411 0.00151367 14.793 0.0600838 15.0229 0.171429L8 6.65143ZM15.8286 0.977143L8.4 7.83429C8.29434 7.93228 8.15554 7.98674 8.01143 7.98674C7.86732 7.98674 7.72852 7.93228 7.62286 7.83429L0.194286 0.977143C0.0750195 1.20516 0.00861598 1.4571 0 1.71429V9.71429C0 10.1689 0.180612 10.605 0.502103 10.9265C0.823594 11.248 1.25963 11.4286 1.71429 11.4286H14.2857C14.7404 11.4286 15.1764 11.248 15.4979 10.9265C15.8194 10.605 16 10.1689 16 9.71429V1.71429C15.9985 1.45887 15.9399 1.20702 15.8286 0.977143Z"></path>
+                          </g>
+                          <defs>
+                               <clipPath id="clip0_122_349">
+                                   <rect width="16" height="11.4286"></rect>
+                               </clipPath>
+                           </defs>
+                       </svg> info@poornima.org
+                      </a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+</section>
+<div class="text text-decoration-none">
+  <p class="text-center m-2 text-decoration-none">Designed and Developed by : <a href="https://linktr.ee/dev_09" target="_blank"><span class="text-primary text-decoration-none">Dev Tekwani | PIET </span></p></a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+  })
+</script>
+<script src="script.js"></script>
+</body>
+</html>

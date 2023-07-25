@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IIC Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @media screen and (min-width: 100px) and (max-width: 700px) {
+        .navbar-brand{
+          display: none;
+        }
+
+        #ai{
+          height: 6vh;
+        }
+      }
+
+      #headind{
+        text-align: center;
+      }
+
+
+      #highlights{
+        background-image: url('https://img.freepik.com/free-photo/abstract-blur-defocused-bookshelf-library_1203-9640.jpg?w=996&t=st=1683827576~exp=1683828176~hmac=d0fb2fca939164478e9c446e0f496df1e6f421b6ee4c31e95c94fd1c899476f3');
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+</head>
+  <body>
+    <div id="preloader"></div>
+    <button id="scrollToTopBtn">Scroll to Top</button>
+    <!--                  Header                       -->
+    <section class="top d-md-block">
+      <div class="container">
+        <div id="logo" class="row m-0 p-0">
+          <div class="col-md-4 col-xxl-6 align-self-left">
+            <a href="/" class="text-decoration-none">
+              <img src="images/logopiet.png" alt="logo" style="width: 100%; max-width: 350px;" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-8 col-xxl-6 text-end align-self-right">
+            <ul class="nav float-md-end">
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2"><a class="text-light text-decoration-none" href="index.html">Home</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">E-Library</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">ERP</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">Feedback</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">IQAC</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2">Contact</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  <!--                    Navbar                       -->
+<div class="stick" style="position: sticky; top: 0; z-index: 100;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+    <div class="menu container-fluid">
+      <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll" style="padding-right: 3px;">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-warning" href="vission&mission.html">Vision & Mission</a></li>
+              <li><a class="dropdown-item text-warning" href="history.html">History</a></li>
+              <li><a class="dropdown-item text-warning" href="Message.html">Messages</a></li>
+              <li><a class="dropdown-item text-warning" href="Min-gc.html">Minutes of GC Meeting</a></li>
+              <li><a class="dropdown-item text-warning" href="partners.html">Our Partners</a></li>
+              <li><a class="dropdown-item text-warning" href="advisory.html">Advisory Board</a></li>
+              <li><a class="dropdown-item text-warning" href="gpverningcouncil.html">Governing Council</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Administration
+            </a>
+            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-warning" href="Organogram.html">Organogram</a></li>
+              <li><a class="dropdown-item text-warning" href="\">campus Team</a></li>
+              <li><a class="dropdown-item text-warning" href="R&R.html">Rules & Regulations</a></li>
+              <li><a class="dropdown-item text-warning" href="A&A.html">Affiliation & Approvals</a></li>
+              <li><a class="dropdown-item text-warning" href="AFS.html">Audited Statement</a></li>
+              <li><a class="dropdown-item text-warning" href="OBE.html">Process of OBE</a></li>
+              <li><a class="dropdown-item text-warning" href="#">Annual Report</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Admissions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Academics
+            </a>
+            <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="1styr.html">First Year Department</a></li>
+              <li><a class="dropdown-item text-primary" href="csdept.html">Computer Science Department</a></li>
+              <li><a class="dropdown-item text-primary" href="Aidsdept.html">AI-DS Department</a></li>
+              <li><a class="dropdown-item text-primary" href="IDEALAB.html">IDEA LAB Department</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Training & Placement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Research & Innovation</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Life @ PIET
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="#">Events</a></li>
+              <li><a class="dropdown-item text-primary" href="#">Facilities</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Students</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              IIC
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="#">IPR Cell</a></li>
+              <li><a class="dropdown-item text-primary" href="pbic.html">PBIC</a></li>
+              <li><a class="dropdown-item text-primary" href="iicevents.html">IIC Events</a></li>
+              <li><a class="dropdown-item text-primary" href="#">Repositories</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Alumni</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Accreditions
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-primary" href="#">NBA</a></li>
+              <li><a class="dropdown-item text-primary" href="#">NAAC</a></li>
+              <li><a class="dropdown-item text-primary" href="#">NIRF</a></li>
+              <li><a class="dropdown-item text-primary" href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  
+    <div class="container my-4">
+      <h1 class="text-center text-light rounded" style="background-color: #444;">IIC Events</h1>
+      <div class="row my-5">
+        <h3 class="text-center"><span>POORNIMA INSTITUTE OF ENGINEERING &amp; TECHNOLOGY. JAIPUR</span></h3>
+        <h5 class="text-center"><span>Institution’s Innovation Council (IIC)</span></h5>
+        <div class="text-center"><img class="my-5" src="images/image1.png" width="100%"></div>
+        <h5 class="text-center my-5"><span>Journey of IIC established at the Institute</span></h5>
+  
+        <p class="justify-text"><span>In the year 2018, the Ministry of Education (MoE) through MoE’s
+            Innovation Cell (MIC) launched the Institution’s Innovation Council (IIC) program in collaboration
+            with AICTE for Higher Educational Institutions (HEIs) to systematically foster the culture of innovation and
+            start-up ecosystem in education institutions. Under IIC our Institution has been performing various
+            activities in past years, and had continued to do the same even though the whole year is undergone to the
+            pandemic. PIET -IIC got 3.5 Star Rating allotted by MOE India. The institution is dedicated to conducting
+            activities related to IP, start-up and innovation during 2019-20 under the IIC flagships. These activities
+            were appreciated by all stakeholders and thus we got motivated to improve in the last year i.e., 2021-22. In
+            the year 2021-22 IIC of PIET has organized 65 activities to address research &amp; innovation, start-up,
+            internship, IPR etc. Institute organized start-up innovation contest to provide a platform to young
+            innovative brains. Along with it, the IIC of PIET also organized 10 sessions to understand the importance of
+            IPR and to convert projects into IP. Council tried to develop and nurture young brains to create new
+            initiatives based on innovation and starting start-ups. In this session four IPR, three start up session,
+            two start up contests and four innovation &amp; research activities and workshops were organized during this
+            year. These activities also resulted in new start-ups developed by our students and IPR developed by our
+            faculty &amp; students. PIET 28 young innovators also participated in the regional meet of IIC at Amity
+            University Jaipur. We have conducted National level Project Exhibition and contest
+          </span><span><b>UDHBHAV-2022 </b> </span><span>&nbsp;in our campus. More than 50 school and colleges
+            participated. </span></p>
+        <p class="my-3"><b>B. Brief mention of key functionaries at the IIC Institute </b></p>
+        <a id="t.302c2f10edaa4cdb78906b3731de96cc5afd0081"></a><a id="t.0"></a>
+        <table>
+          <tbody><tr>
+            <td colspan="1" rowspan="1">
+              <p><b>Name and Designation</b></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><b>Position</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Dr. Dinesh Goyal, Director</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Head of Institute</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Dr. Priya Mathur, Professor</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>President</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Dr. Gautam Singh, Registrar</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Vice President</span></p>
+            </td>
+          </tr>
+          <tr class="c51">
+            <td colspan="1" rowspan="1">
+              <p><span>Dr Purushottam Lal, Associate Professor</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Convener</span></p>
+              <p><span>IPR Activity Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Dr. Mukesh Chandra, Associate Professor</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>NIRF Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Dr.Budesh Kanwar, Professor</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Innovation Activity Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Ms. Priyanka Sharma, Assistant Professor</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>ARIIA Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr. Mohit Bajpai, Assistant Professor,</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Social Media Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr Yodendra Sharma, Associate Professor</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Start up Activity Coordinator</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr. Udit Mamodia, Assistant Professor</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>HOD, IDEA LAB</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr. Akhilesh Natani, Director, Appcino Technologies Pvt. Ltd.,
+                  Jaipur</span></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>External Expert</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><span>Mr. Puneet Mittal, Co-Founder &amp; CEO, Pratham Software, Jaipur</span>
+              </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><span>Industrialists/ stakeholders</span></p>
+            </td>
+          </tr>
+        </tbody></table>
+        <p class="c8 c18"><span></span></p>
+        <p><b>C. Portfolio/graphical/Tabular representation of Resource strength (human capital
+            and
+            Physical capital) of the IIC institution </b></p>
+        <p class="c8 c18"><span></span></p><a id="t.600f2a8968c1994b9f7921083a51d6a2eb2dca11"></a><a id="t.1"></a>
+        <table class="c19">
+          <tbody><tr class="c45">
+            <td class="c33" colspan="1" rowspan="1">
+              <p><span>Total No. of IIC Members </span></p>
+            </td>
+            <td class="c24" colspan="1" rowspan="1">
+              <p><span>25</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+              <p><span>Total No. of IAs -</span></p>
+            </td>
+            <td class="c40" colspan="1" rowspan="1">
+              <p><span>14</span></p>
+            </td>
+          </tr>
+          <tr class="c45">
+            <td class="c33" colspan="1" rowspan="1">
+              <p><span>Total No. of faculty Mentors from Portal </span></p>
+            </td>
+            <td class="c24" colspan="1" rowspan="1">
+              <p><span>5</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+              <p><span>Pre-Incubation Units, If any </span></p>
+            </td>
+            <td class="c40" colspan="1" rowspan="1">
+              <p><span>3</span></p>
+            </td>
+          </tr>
+          <tr class="c45">
+            <td class="c33" colspan="1" rowspan="1">
+              <p><span>Incubation Units, If any </span></p>
+            </td>
+            <td class="c24" colspan="1" rowspan="1">
+              <p><span>9</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+              <p><span>IP Facilitation Unit, If any </span></p>
+            </td>
+            <td class="c40" colspan="1" rowspan="1">
+              <p><span>&nbsp; &nbsp; &nbsp; &nbsp; 10</span></p>
+            </td>
+          </tr>
+        </tbody></table>
+  
+  
+  
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>Innovation in Exploratory Data analysis for industry
+            4.O</b></p>
+        <div class="text-center">
+          <img class="my-5" src="images/iicimage2.jpg" width="100%">
+        </div>
+        <p class="c34 c42"><span>On December 22,Department of mathematics and IIC(Institute’s innovation
+            council)&nbsp; organized an expert session for the students of first year in Arbuda Convention Centre, PIET
+            Jaipur. The guest speaker/ expert for the session was TAPAN JAIN Faculty Electronics and Communication IIIT
+            NAGPUR. The session start at 10:00AM,with the arrival of the session expert – Sir, Tapan jain. The
+            anchor Shruti Agarwal heartily welcomed everyone. The session moved forward, and The anchor requested the
+            Principal and Director ( Poornima institute of engineering and technology ) – Dr Dinesh goyal sir, to
+            present the token of love to Sir, Tapan jain for taking out time from his busy schedule and sharing his
+            valuable words with the student of first year.</span></p>
+  
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>National Pollution Control Day</b></p>
+  
+        <p><span>The ‘National Pollution Control Day’ (02-12-22) is observed in
+            memory of those who died in the 1984 Bhopal gas tragedy, which occurred on the intervening night of December
+            2 and 3 in 1984 at the Union Carbide India Limited (UCIL) plant in the Madhya Pradesh capital. Let’s
+            take a pledge on National Pollution Control Day that we will take forward our efforts to reduce air , water,
+            land , noise &amp; other form of pollution and make this world pollution free,”Students presented
+            their ideas to control pollution through speech, PPT and poster making.An online quiz competition was also
+            held to raise awareness about pollution among students.</span></p>
+  
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img src="images/image2.jpg" width="100%">
+  
+          </div>
+          <div class="col-md-6 col-12">
+            <img src="images/image5.png" width="100%">
+          </div>
+        </div>
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>Motivational Session by Sandeep Jain</b></p>
+  
+        <div class="text-center">
+          <img class="my-5" src="images/image4.jpg" width="100%">
+        </div>
+  
+        <p><span>An expert session on the title “Motivational Session by Sandeep Jain”
+            organised for the I year students in the Arbuda Convention Center on 2 November 2022.It has been scheduled
+            from 10.00 am to 11.30 am. The Session expert has been welcome by the token of gratitude by the Dr. Dinesh
+            Goyal (Director &amp; Principal, PIET).</span></p>
+  
+        <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;He motivated the student to become
+            a
+            good person in their life, try to do something for the society and also give them courage to think
+            big.</span></p>
+  
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>Workshop on How to Develop Innovative Projects</b></p>
+  
+        <div class="text-center">
+          <img class="my-5" src="images/image7.png" width="100%">
+        </div>
+        <p><span>The event was coordinated by Dr.Krati Sharma, welcome and brief introduction of
+            session expert Mr. Manoj Raman was done by Dr. Udit Mamodiya, token of gratitude by Dr. Dinesh Goyal
+            (Director &amp; Principal PIET) and vote of thanks given by Reshma Kala</span></p>
+        <p><span>. </span></p>
+        <p><span>The main objective of this session is to create new knowledge, new ideas for
+            product
+            and services. Demonstration helps to encourage students to think critically, solve challenging problems, and
+            develop important skills.</span></p>
+  
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>Workshop on Entrepreneurship Skill, Attitude and Behavior by
+            Mr. Srikant Gupta</b></p>
+  
+        <div class="text-center">
+          <img class="my-5" src="images/image6.png" width="100%">
+        </div>
+  
+        <p><span>Mr. Srikant Gupta, Founder, Inspirit Institute of Communication Skills interacted
+            with the students on 9th November 2022 under the ongoing Student Inter Induction Program 2022_2023 in
+            Arbudha Convention Centre. Dr. Ritu Soryan introduced the Chief Guest and gave a detailed account about his
+            life and his work.</span></p>
+  
+        <p><span>In his interacting session he has told many stories and related with the real life
+            situations. He talked about how to connect and communicate with the people without stage fear. He motivated
+            the students to lead a learning life in this four years of student journey.</span></p>
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>An Expert Talk on “Entrepreneurship and Innovation as
+            Career Opportunity &nbsp;” by Er. Loveneesh Talwar</b></p>
+  
+        <div class="text-center">
+          <img class="my-5" src="images/image9.png" width="100%">
+        </div>
+  
+  
+        <p><span>An expert session on the title “Entrepreneurshipand Innovation as Career
+            Opportunity by Er. Loveneesh Talwar” organised by Dr. Dinesh Goyal, Director, PIET. He praised all the
+            efforts made by IIC, Poornima Institute of Engineering &amp; Technology for their excellent efforts to make
+            the Session successful.</span></p>
+        <p><span>The session was starting with introduction of entrepreneurship and followed by who
+            is
+            an entrepreneur, why entrepreneurship, characteristics of a successful entrepreneur, types of
+            entrepreneurship, pros and cons of entrepreneurship, about innovation, difference between invention and
+            innovation, different examples of innovation and inventions, introduction of research, various example of
+            research products are also provided</span></p>
+  
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>Field/Exposure Visit to R- CAT Jaipur</b></p>
+  
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img class="my-5" src="images/image8.jpg" width="100%">
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="my-5" src="images/image10.jpg" width="100%">
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="my-5" src="images/image11.jpg" width="100%">
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="my-5" src="images/image12.jpg" width="100%">
+          </div>
+        </div>
+  
+  
+        <p><span>Visit is considered as one of the tactical methods of teaching. The main reason
+            behind this Industrial industrial visit was to let students know things practically through interaction,
+            working methods and employment practices</span></p>
+  
+        <p><span>Industrial visit provided awareness of new technologies, built relationships, and
+            combined theoretical and practical knowledge. Appreciated by company. Exemplified "edutainment"
+            – education and environment.</span></p>
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>How to Become Entrepreneur</b></p>
+        <div class="text-center">
+          <img class="my-5" src="images/image13.png" width="100%">
+        </div>
+  
+  
+        <p><span>An expert session on How to Become Entrepreneur was organised on 11th March 2023
+            Saturday. The session was conducted on the occasion of International Women's Day celebration, under the
+            guidance of PIET-WISE club and Institution's Innovation Council, Ministry of Education at Poornima
+            Institute of Engineering and Technology, Jaipur, Rajasthan. </span></p>
+        <p><span>she covered - &nbsp;Learn What it Means &amp; Decide if You are Still Willing to
+            Pursue it, Pick a Business Idea,Get Busy Building Your Network, Organise Your Business</span></p>
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>A Session on ChatGPT</b></p>
+        <div class="text-center">
+          <img class="my-5" src="images/image14.jpg" width="100%">
+        </div>
+  
+        <p><span>The workshop started with a formal introduction and felicitation of the guests
+            &amp;
+            speakers, Mr Gaurav Bansal (Co-chair, Yi Jaipur) , Mrs. Ayushi Agarwal (Co-chair, Yuva vertical, Yi Jaipur),
+            and Mr Deepak Sihag (Founder xLab IT consultancy services) by Dr. Dinesh Goyal Sir, Principal, PIET. </span>
+        </p>
+        <p><span>ChatGPT is one of the most chosen and loved AI tools of the current time. ChatGPT
+            is
+            a sibling model to InstructGPT, which is Brief trained to follow an instruction in a prompt and provide a
+            detailed response. In order to educate and aware the students about the ChatGPT &amp; its optimal usage, the
+            Yi Club (PIET) organised a session to cover basics of ChatGPT on 17 May 2023.</span></p>
+  
+        <p class="text-center mt-5" style="font-size:22px;"><b>“Orientation Session on IIC 5.0 (2022-23) &amp;
+            Features” by MoE's Innovation Cell</b></p>
+  
+        <div class="text-center">
+          <img class="my-5" src="images/image15.png" width="100%">
+        </div>
+        <p><span>The Poornima Institute of Engineering &amp; Technology, Institution Innovation
+            Council(IIC) Committee Members, and Students &amp; Other Faculty members attended an Orientation Session on
+            IIC 5.0 (2022-23) and its features in compliance with the directives of the Ministry of Education (MoE)
+            Innovation Council (MIC). Dr. Dinesh Goyal, Director &amp; Principal, PIET provided an opportunity to
+            conduct this, Session. He praised all the efforts made by IIC, Poornima Institute of Engineering &amp;
+            Technology, Jaipur for their excellent efforts to make the Session successful.</span></p>
+  
+            <p class="text-center mt-5" style="font-size:22px;"><b>Online Session on Entrepreneurship The Real World and The
+              Challenge Ahead by Mr. Raghav Totla</b></p>
+  
+            <div class="text-center">
+              <img class="my-5" src="images/image16.png" width="100%">
+            </div>
+  
+  
+  
+        <p><span>An informative event was organised at in “Poornima Institute Of Engineering
+            And
+            Technology Central Library NDLI Club”, entitled as “Entrepreneurship The Real World Challenges
+            &amp; The Road Ahead”. The session kickstarted with warm greetings by Hiya Gurbani [Anchor] and words
+            of wisdom by ‘Dr. Dinesh Goyal’[Principal &amp; Director PIET]. Afterwards, the session was
+            continued by inviting Dr Priya Mathur for the introduction of the session.</span></p>
+  
+        <p><span>The session covered the best of knowledge in the brimming of entrepreneurship. It
+            is
+            best for the upcoming challenges in the field. The session was an eye opening and bringing new direction to
+            a life. Eventually, the session was ended by a vote of thanks by Ms. Suman Jain. Overall, it was an aspiring
+            session and great opportunity for the budding entrepreneurs.</span></p>
+      </div>
+    </div>
+  
+   <!--                    Footer                       -->
+   <section class="footer py-5 mb-4 mb-md-0" style="background-color: black; color: white;">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-4 py-3 py-md-0">
+                <h2 class="sub-heading text-light">About</h2>
+
+                <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg text-light">
+                     <rect width="54" height="5" fill="#2E3192"></rect>
+                </svg>
+                <div class="pt-1 pt-md-3 text-light">
+                  <ul style="list-style: disclosure-closed ;font-size: initial ;" class="highlight_points">
+                    <li> <a href="public/documents/mandatory-disclosure.pdf" style="text-decoration: none; color: white;"> Mandatory Disclosure </a></li>
+                    <li> <a href="" style="text-decoration: none; color: white;">Privacy Policy </a></li>
+                    <li> <a href="" style="text-decoration: none; color: white;"> Vacancy </a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <h2 class="sub-heading text-light">SOCIAL LINKS</h2>
+
+                <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg text-light">
+                     <rect width="54" height="5" fill="#2E3192"></rect>
+                </svg>
+                <div id="links" class="pt-1 pt-md-3 text-light">
+                  <a href="#" class="fa fa-facebook text-light"></a>
+                    <a href="#" class="fa fa-instagram text-light"></a>
+                    <a href="#" class="fa fa-linkedin text-light"></a>
+                    <a href="#" class="fa fa-twitter text-light"></a>
+                    <a href="#" class="fa fa-youtube text-light"></a>
+                </div>
+                <p class="link-clr pt-4 text-light">© 2023. All Rights Reserved.</p>
+            </div>
+
+            <div class="col-md-4">
+              <h2 class="sub-heading text-light">CONTACT US</h2>
+              <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg">
+                   <rect width="54" height="5" fill="#2E3192"></rect>
+              </svg> <br>
+              <div class="pt-1 pt-md-3">
+                  <a href="https://goo.gl/maps/VFyi5L9ts9qGJvtA6" class="text-decoration-none f-text text-light">
+                      Poornima Group, ISI 6 &amp; 2, RIICO Institutional Area Sitapura, Jaipur - 302022
+                  </a>
+              </div>
+                <ul class="p-0 list-unstyled pt-3">
+                  <li>
+
+                      <a href="tel:+91-9928555222" class="text-decoration-none f-text text-light"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                        <g clip-path="url(#clip0_122_338)">
+                          <path d="M15.5574 11.2841L12.3574 9.68408C12.2072 9.60912 12.0373 9.58331 11.8716 9.6103C11.7059 9.63729 11.5529 9.71572 11.4343 9.83448L10.0943 11.1745C8.1687 10.8649 5.13433 7.8313 4.82554 5.90573L6.16552 4.56575C6.28428 4.4471 6.36271 4.29411 6.3897 4.12842C6.41669 3.96274 6.39088 3.79276 6.31592 3.64256L4.71594 0.442598C4.66356 0.337707 4.58877 0.245611 4.49686 0.172828C4.40495 0.100044 4.29816 0.0483516 4.18406 0.0214096C4.06996 -0.00553233 3.95133 -0.00706554 3.83657 0.0169185C3.7218 0.0409025 3.61372 0.0898175 3.51996 0.160201L0.319996 2.56017C0.22064 2.63469 0.139999 2.73131 0.0844571 2.8424C0.0289156 2.95348 0 3.07597 0 3.20016C0 10.8561 5.14394 16 12.7998 16C12.924 16 13.0465 15.9711 13.1576 15.9155C13.2687 15.86 13.3653 15.7794 13.4398 15.68L15.8398 12.48C15.9102 12.3863 15.9591 12.2782 15.9831 12.1634C16.0071 12.0487 16.0055 11.93 15.9786 11.8159C15.9516 11.7018 15.9 11.5951 15.8272 11.5031C15.7544 11.4112 15.6623 11.3364 15.5574 11.2841Z"></path>
+                          <path d="M9.19989 1.59998C10.5785 1.60167 11.9001 2.15007 12.8749 3.12488C13.8497 4.09969 14.3981 5.42133 14.3998 6.79991C14.3998 7.01208 14.4841 7.21556 14.6341 7.36559C14.7842 7.51562 14.9876 7.5999 15.1998 7.5999C15.412 7.5999 15.6155 7.51562 15.7655 7.36559C15.9155 7.21556 15.9998 7.01208 15.9998 6.79991C15.9977 4.99711 15.2806 3.26876 14.0058 1.99399C12.731 0.719215 11.0027 0.00211721 9.19989 0C8.98772 0 8.78424 0.0842844 8.63421 0.234312C8.48419 0.384339 8.3999 0.587819 8.3999 0.79999C8.3999 1.01216 8.48419 1.21564 8.63421 1.36567C8.78424 1.5157 8.98772 1.59998 9.19989 1.59998Z"></path>
+                           <path d="M9.19989 4.80018C9.73032 4.80018 10.239 5.01089 10.6141 5.38595C10.9892 5.76102 11.1999 6.26972 11.1999 6.80015C11.1999 7.01232 11.2842 7.2158 11.4342 7.36583C11.5842 7.51586 11.7877 7.60014 11.9999 7.60014C12.212 7.60014 12.4155 7.51586 12.5655 7.36583C12.7156 7.2158 12.7998 7.01232 12.7998 6.80015C12.7998 5.84538 12.4206 4.92972 11.7454 4.2546C11.0703 3.57948 10.1547 3.2002 9.19989 3.2002C8.98772 3.2002 8.78424 3.28448 8.63421 3.43451C8.48419 3.58453 8.3999 3.78801 8.3999 4.00019C8.3999 4.21236 8.48419 4.41584 8.63421 4.56586C8.78424 4.71589 8.98772 4.80018 9.19989 4.80018Z"></path>
+                       </g>
+                      <defs>
+                      <clipPath id="clip0_122_338">
+                           <rect width="16" height="16"></rect>
+                       </clipPath>
+                       </defs>
+                      </svg> +91-9928555222
+                      </a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="https://api.whatsapp.com/send?text=Hi!+I+have+an+enquiry&amp;phone=%20+91-9928666222" class="text-decoration-none f-text text-light">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                           <path d="M8.00031 0.0230633C3.59998 0.0230633 0.0232299 3.60323 0.0232299 8.00015C0.0232299 9.46477 0.422136 10.8911 1.18149 12.1355L0.0391272 15.5591C0.000799078 15.674 0.029512 15.7984 0.11565 15.8846C0.176279 15.9452 0.259212 15.9771 0.342279 15.9771C0.3774 15.9771 0.409318 15.9739 0.444443 15.9612L3.86495 14.8221C5.1124 15.5784 6.53869 15.9771 8.00033 15.9771C12.4007 15.9771 15.9774 12.4004 15.9774 8.00004C15.9774 3.60312 12.4003 0.0229492 8.00033 0.0229492L8.00031 0.0230633ZM13.1056 11.2296C13.1056 11.5072 12.9908 11.7816 12.7928 11.9794L11.9632 12.7995C11.7654 12.9973 11.4974 13.1058 11.223 13.1058H11.1815C6.72369 12.9142 3.08609 9.2767 2.89464 4.82234C2.88182 4.53201 2.9936 4.24474 3.20099 4.03735L4.02109 3.20775C4.21888 3.00996 4.4933 2.89511 4.77415 2.89511H5.08051C5.5176 2.89511 5.91651 3.16955 6.0697 3.58113L6.79726 5.51156C6.93762 5.88803 6.85148 6.31884 6.57397 6.61238L6.27402 6.92821C6.13674 7.07178 6.12085 7.29201 6.23249 7.45464C6.60268 7.99071 7.39396 9.0022 8.549 9.78076C8.70859 9.88613 8.92562 9.8669 9.06596 9.73295L9.39141 9.42659C9.68174 9.14895 10.1126 9.0628 10.489 9.20317L12.4194 9.93072C12.831 10.0871 13.1055 10.4828 13.1055 10.9199L13.1056 11.2296Z"></path>
+                          </svg> +91-9928666222
+                      </a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="mailto:info@poornima.org" class="text-decoration-none f-text text-light" target="_blank">
+                          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                          <g clip-path="url(#clip0_122_349)">
+                              <path d="M8 6.65143L0.977143 0.171429C1.20702 0.0600838 1.45887 0.00151367 1.71429 0H14.2857C14.5411 0.00151367 14.793 0.0600838 15.0229 0.171429L8 6.65143ZM15.8286 0.977143L8.4 7.83429C8.29434 7.93228 8.15554 7.98674 8.01143 7.98674C7.86732 7.98674 7.72852 7.93228 7.62286 7.83429L0.194286 0.977143C0.0750195 1.20516 0.00861598 1.4571 0 1.71429V9.71429C0 10.1689 0.180612 10.605 0.502103 10.9265C0.823594 11.248 1.25963 11.4286 1.71429 11.4286H14.2857C14.7404 11.4286 15.1764 11.248 15.4979 10.9265C15.8194 10.605 16 10.1689 16 9.71429V1.71429C15.9985 1.45887 15.9399 1.20702 15.8286 0.977143Z"></path>
+                          </g>
+                          <defs>
+                               <clipPath id="clip0_122_349">
+                                   <rect width="16" height="11.4286"></rect>
+                               </clipPath>
+                           </defs>
+                       </svg> info@poornima.org
+                      </a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+</section>
+<div class="text text-decoration-none">
+  <p class="text-center m-2 text-decoration-none">Designed and Developed by : <a href="https://linktr.ee/dev_09" target="_blank"><span class="text-primary text-decoration-none">Dev Tekwani | PIET </span></p></a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+  })
+</script>
+<script src="script.js"></script>
+</body>
+</html>
