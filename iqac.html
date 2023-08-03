@@ -1,1 +1,593 @@
-<h1>under development</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IQAC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @media screen and (min-width: 100px) and (max-width: 700px) {
+        .navbar-brand{
+          display: none;
+        }
+
+        #ai{
+          height: 6vh;
+        }
+      }
+
+      #headind{
+        text-align: center;
+      }
+
+
+      #highlights{
+        background-image: url('https://img.freepik.com/free-photo/abstract-blur-defocused-bookshelf-library_1203-9640.jpg?w=996&t=st=1683827576~exp=1683828176~hmac=d0fb2fca939164478e9c446e0f496df1e6f421b6ee4c31e95c94fd1c899476f3');
+      }
+    </style>
+</head>
+  <body>
+    <div id="preloader"></div>
+    <button id="scrollToTopBtn"><img src="images/uparrow.jpg" style="height: 3vh; width: 3vh;"></button>
+    <!--                  Header                       -->
+    <section class="top d-md-block">
+      <div class="container m-0 p-0" style="max-width: 400vh;">
+        <div id="logo" class="row m-0 p-0">
+          <div class="col-md-4 col-xxl-6 text-start">
+            <a href="/" class="text-decoration-none">
+              <img src="images/logopiet.png" alt="logo" style="width: 100%; max-width: 350px;" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-8 col-xxl-6 text-end">
+            <ul class="nav">
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2"><a class="text-light text-decoration-none" href="index.html">Home</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2"><a href="elibrary.html" style="text-decoration: none; color: white;">E-Library</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2"><a href="erp.html" style="text-decoration: none; color: white;">ERP</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2"><a href="feedback.html" style="text-decoration: none; color: white;">Feedback</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2"><a href="iqac.html" style="text-decoration: none; color: white;">IQAC</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-secondary m-2"><a href="contact.html" style="text-decoration: none; color: white;">Contact</a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  <!--                    Navbar                       -->
+  <div class="stick" style="position: sticky; top: 0; z-index: 100;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+      <div class="menu container-fluid">
+        <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll" style="padding-right: 3px;">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-warning" href="vission&mission.html">Vision & Mission</a></li>
+                <li><a class="dropdown-item text-warning" href="history.html">History</a></li>
+                <li><a class="dropdown-item text-warning" href="advisory.html">Advisory Board</a></li>
+                <li><a class="dropdown-item text-warning" href="Min-gc.html">Governing council & Minutes of Meeting</a></li>
+                <li><a class="dropdown-item text-warning" href="Message.html">Messages</a></li>
+                <li><a class="dropdown-item text-warning" href="partners.html">Our Partners</a></li>
+  
+                
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Administration
+              </a>
+              <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-warning" href="Organogram.html">Organogram</a></li>
+                <li><a class="dropdown-item text-warning" href="cteam.html">campus Team</a></li>
+                <li><a class="dropdown-item text-warning" href="R&R.html">Rules & Regulations</a></li>
+                <li><a class="dropdown-item text-warning" href="A&A.html">Affiliation & Approvals</a></li>
+                <li><a class="dropdown-item text-warning" href="AFS.html">Audited Statement</a></li>
+                <li><a class="dropdown-item text-warning" href="obe.html">Process of OBE</a></li>
+                <li><a class="dropdown-item text-warning" href="annualreport.html">Annual Report</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="Admission.html">Admissions</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Academics
+              </a>
+              <ul id="drop" class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-warning" href="1styr.html">First Year Department</a></li>
+                <li><a class="dropdown-item text-warning" href="csdept.html">Computer Science Department</a></li>
+                <li><a class="dropdown-item text-warning" href="Aidsdept.html">AI & DS Department</a></li>
+                <li><a class="dropdown-item text-warning" href="IDEALAB.html">IDEA LAB Department</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="T&P.html">Training & Placement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="reseach.html">Research & Innovation</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Life @ PIET
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-warning" href="events.html">Events</a></li>
+                <li><a class="dropdown-item text-warning" href="facilities.html">Facilities</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="council.html">Student's Council</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                IIC
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-warning" href="https://drive.google.com/file/d/1iLKkphfxkmaOtHcL5Ewph-6-M_7QV3dQ/view?usp=sharing">IPR Cell</a></li>
+                <li><a class="dropdown-item text-warning" href="pbic.html">PBIC</a></li>
+                <li><a class="dropdown-item text-warning" href="iicevents.html">IIC Events</a></li>
+                <li><a class="dropdown-item text-warning" href="https://drive.google.com/file/d/10hAMbHpaW8d5gjHFe2Z7JY_0_rS3g6a-/view?usp=sharing">Repositories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="alumni.html">Alumni</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Accreditions
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-warning" href="nba.html">NBA</a></li>
+                <li><a class="dropdown-item text-warning" href="https://drive.google.com/file/d/1FLyIRYo7AuFbrBMzzZ6kSIDEKYcLYVX_/view?usp=sharing">NAAC</a></li>
+                <li><a class="dropdown-item text-warning" href="https://drive.google.com/file/d/1W8qcM1bB-eI5pVTDVRZLlzcjOPsa4MwO/view?usp=sharing">NIRF</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ </div>
+    
+    <!--                                           main content                                          -->
+    <div id="About">
+        <h1 class="heading-h2 text-center text-light" style="background-color: black; margin-top: 3vh;">Internal Quality Assurance Cell (IQAC)</h1>
+        <p style="text-align: justify; padding: 40px; font-size: 20px; font-family: 'Times New Roman', Times, serif;">The Internal Quality Assurance Cell (IQAC) of Poornima Institute of Engineering and Technology, Jaipur was established in 2018 to enhance teaching-learning quality and sustain the institution's performance. The IQAC focuses on fostering a culture of belongingness and stakeholder participation in all activities. The institute's vision emphasizes "Pursuit of Excellence in Education," followed by Research and Entrepreneurship. The institution practices outcome-based education, student-centric experimental learning, participative learning, and problem-solving methodologies to improve learning experiences. The IQAC monitors academic activities, channels efforts, and institutionalizes good practices towards academic excellence. The IQAC includes the head of the institution, senior faculty members, distinguished educationalists, industry experts, local management representatives, and stakeholders. </p>
+
+        <h1 style="margin-left: 2vw;">Objective</h1>
+        <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">The primary aim of IQAC is - </p>
+        <ul>
+            <li>To develop a system for conscious, consistent and catalytic action to improve the academic and administrative performance of the institution.</li>
+            <li>To promote measures for institutional functioning towards quality enhancement through internalization of quality culture and institutionalization of best practices.</li>
+        </ul>
+
+        <h1 style="margin-left: 2vw;">Strategies</h1>
+        <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">IQAC shall evolve mechanisms and procedures for - </p>
+        <ul>
+            <li>Ensuring timely, efficient and progressive performance of academic, administrative and financial tasks;</li>
+            <li>The relevance and quality of academic and research programmes;</li>
+            <li>Equitable access to and affordability of academic programmes for various sections of society;</li>
+            <li>Optimization and integration of modern methods of teaching and learning;</li>
+            <li>The credibility of evaluation procedures;</li>
+            <li>Ensuring the adequacy, maintenance and proper allocation of support structure and services;</li>
+            <li>Sharing of research findings and networking with other institutions in India and abroad.</li>
+        </ul>
+
+        <h1 style="margin-left: 2vw;">Functions</h1>
+        <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">Some of the functions expected of the IQAC are: </p>
+        <ul>
+            <li>Development and application of quality benchmarks/parameters for various academic and administrative activities of the institution;</li>
+            <li>Facilitating the creation of a learner-centric environment conducive to quality education and faculty maturation to adopt the required knowledge and technology for participatory teaching and learning process;</li>
+            <li>Arrangement for feedback response from students, parents and other stakeholders on quality-related institutional processes;</li>
+            <li>Dissemination of information on various quality parameters of higher education;</li>
+            <li>Organization of inter and intra institutional workshops, seminars on quality related themes and promotion of quality circles;</li>
+            <li>Documentation of the various programs/activities leading to quality improvement;</li>
+            <li>Acting as a nodal agency of the Institution for coordinating quality-related activities, including adoption and dissemination of best practices; </li>
+            <li>Development and maintenance of institutional database through MIS for the purpose of maintaining /enhancing the institutional quality;</li>
+            <li>Development of Quality Culture in the institution;</li>
+            <li>Preparation of the Annual Quality Assurance Report (AQAR) as per guidelines and parameters of NAAC, to be submitted to NAAC.</li>
+        </ul>
+
+        <h1 style="margin-left: 2vw;">Benefits</h1>
+        <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">IQAC will facilitate / contribute </p>
+        <ul>
+            <li>Ensure heightened level of clarity and focus in institutional functioning towards quality enhancement;</li>
+            <li>Ensure internalization of the quality culture;</li>
+            <li>Ensure enhancement and coordination among various activities of the institution and institutionalize all good practices;</li>
+            <li>Ensure enhancement and coordination among various activities of the institution and institutionalize all good practices;</li>
+            <li>Act as a dynamic system for quality changes in HEIs;</li>
+            <li>Build an organized methodology of documentation and internal communication.</li>
+        </ul>
+
+        <h1 style="margin-left: 2vw;">Constitution of Internal Quality Assurance Cell (IQAC)</h1>
+        <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">In pursuance of the NAAC/AICTE/NBA guidelines, presently the internal quality assurance cell is renewing w.e.f. 28.10.2022 as follows: </p>
+
+        <div id="projects">
+            <div class="table-responsive m-4 bg-light p-2">
+              <h2 style="text-align: center; text-decoration: double;"> <b>Committee Members</b></h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">S.No.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Designation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Dr. Dinesh Goyal, Director/Principal</td>
+                        <td>Chairman</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Mr. Jai Sharma</td>
+                        <td>Management Representative</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Dr. Gautam Singh, Professor & Registrar</td>
+                        <td>Convener</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Dr. Mukesh Chandra, Professor</td>
+                        <td>Coordinator, IQAC</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Ms. Alka Rani, Assistant Professor (Electronics & Comm. Engg.)</td>
+                        <td>Member</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Dr. Sama Jain, Professor (Chemistry)</td>
+                        <td>Member</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Dr. Priya Mathur, Professor (Mathematics)</td>
+                        <td>Member</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Mr. Deepak Moud, Assistant Professor (Computer Engineering)</td>
+                        <td>Member</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Dr. Anil Kumar, Professor</td>
+                        <td>Member</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Dr. Budhesh Kanwar, Professor</td>
+                        <td>Member</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Dr. Ajay Maurya, Professor</td>
+                        <td>Member</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Mr. Udit Mamodiya, HoD, IDEA Lab</td>
+                        <td>Member</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>Mr. Abhishek Sain, CS, III Year</td>
+                        <td>Student Representative</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>Ms. Akshita Sharma, AI&DS, III Year</td>
+                        <td>Student Representative</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>Mr. Shubham Godika, Software Engineer, Metacube, Jaipur</td>
+                        <td>Alumni Representative</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>Mr. Puneet Mittal, Co-Founder & CEO, Pratham Software, Jaipur</td>
+                        <td>Industrialists/stakeholders</td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>Mr. Akhilesh Natani, Director, Appcino Technologies Pvt. Ltd., Jaipur</td>
+                        <td>Industrialists/stakeholders</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>Dr. Somitra Kumar Sanadhya, Professor, IIT Jodhpur</td>
+                        <td>Expert from Academia</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>Dr. Manoj Kumar, Professor, DTU New Delhi</td>
+                        <td>Expert from Academia</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>Dr. Neelima Gupta, Professor, University of Rajasthan</td>
+                        <td>Expert from Academia</td>
+                      </tr>
+                      <tr>
+                        <td>21</td>
+                        <td>Mr. Damodar Lal Shanna, Office Executive</td>
+                        <td>Member, Office Staff</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h1 style="margin-left: 2vw;">Operational Features of the IQAC</h1>
+          <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">Quality assurance is a by-product of ongoing efforts to define the objectives of an institution, to have a work plan to achieve them and to specify the checks and balances to evaluate the degree to which each of the tasks is fulfilled. Hence devotion and commitment to improvement rather than mere institutional control is the basis for devising procedures and instruments for assuring quality. The right balance between the health and growth of an institution needs to be struck. The IQAC has to ensure that whatever is done in the institution for "education" is done efficiently and effectively with high standards. In order to do this, the IQAC will have to first establish procedures and modalities to collect data and information on various aspects of institutional functioning. <br><br>
+          The coordinator of the IQAC and the secretary will have a major role in implementing these functions. The IQAC may derive major support from the already existing units and mechanisms that contribute to the functions listed above. The operational features and functions discussed so far are broad-based to facilitate institutions towards academic excellence and institutions may adapt them to their specific needs.
+          </p>
+
+          <h1 style="margin-left: 2vw;">Monitoring Mechanism</h1>
+          <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">The institutions need to submit yearly the Annual Quality Assurance Report (AQAR) to NAAC. A functional Internal Quality Assurance Cell (IQAC) and timely submission of Annual Quality Assurance Reports (AQARs) are the Minimum Institutional Requirements (MIR) to volunteer for second, third or subsequent cycle's accreditation. During the institutional visit the NAAC peer teams will interact with the IQACs to know the progress, functioning as well quality sustenance initiatives undertaken by them. <br><br>
+          The Annual Quality Assurance Reports (AQAR) may be the part of the Annual Report. The AQAR shall be approved by the statutory bodies of the HEIs (such as Syndicate, Governing Council/Board) for the follow up action for necessary quality enhancement measures. <br><br>
+          The Higher Education Institutions (HEI) shall submit the AQAR regularly to NAAC. The IQACs may create its exclusive window on its institutional website and regularly upload/ report on its activities, as well as for hosting the AQAR.
+          </p>
+
+          <h2 style="margin-left: 2vw;">Internal Quality Assurance Cell (IQAC) has contributed significantly for institutionalizing the quality assurance strategies and processes.</h2>
+          <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">An institutional commitment to quality teaching at top leadership level and departmental level calls for leaders and staff to identify benchmarks, promote good practices and scale them up across departments, and provide effective support that meets teacher and student expectations. Institution policy reflects the will of the leaders and heads of departments to better understand the teaching process and the experiences initiated by teams or individual faculty. A quality teaching framework allows the institution to monitor support, student satisfaction, study the impact on learning process. <br><br>
+          Support for quality teaching in the organization encompasses a wide range of initiatives that are grouped under six major headings:</p>
+          <ul>
+            <li><b>Academic Assessment Audit:</b> It is carried out by Internal Quality Assurance Cell (IQAC) in the Institute and the objectives of IQAC are to develop a system for pragmatic and consistent action to improve and sustain the academic and administrative performance of the Institution. IQAC also recommends measures for institutional functioning towards quality improvement through internal quality culture and institution best practices.</li>
+            <li><b>Institution-wide and quality assurance policies:</b>Including overall projects planned to develop an excellence culture at institutional level, like policy design, and support to organization and internal quality assurance systems. Every program is evaluated based on the set criteria as mentioned below and the points are awarded. Based on the recommendations of the IQAC, the merits & areas of improvement for each program are highlighted for further action. In addition, incentives are given away to the best performing department.</li>
+            <li><b>Outcome based education:</b>IQAC conducted meetings with all the faculty members to adopt this practice for effective teaching-learning. The guidelines were given to all the faculty members for drafting the Course Outcomes (COs), Programme Specific Outcomes (PSOs), and Programme Educational Objectives (PEOs) and to determine the attainment of POs. COs were defined as per syllabus using Blooms Taxonomy and mapped with POs and PSOs according to correlation level. CO attainment were calculated at the end of each course using direct and indirect methods. The outcomes were communicated to both teachers and students.
+            </li>
+            <li><b>R&D, Industry Institute Interaction, Consultancy, Incubation:</b>To establish entrepreneurship development center/incubation center and sign MoUs collaborations with a number of industries for mutually-beneficial interaction and organize at least 10 joint programs. </li>
+            <li><b>Feedback System:</b>Including actions to measure the design, content and delivery of the programs (through programs evaluation process), Students Feedback is collected and analyzed to improve the quality of teaching and necessary action taken.</li>
+            <li><b>Training & Placement:</b>A dedicated training & placement department has seen tremendous growth with respect to the number of effective training programs conducted and corresponding placements in leading companies </li>
+            <li>IQAC ensures the use of Learning Management System (iCloud) in the institute. The importance of ICT based teaching-learning was focused by IQAC. It played crucial role in implementing the use of Module by motivating faculty and students. The faculty members offered the ICT blended courses to the students to have significant learning outcomes.</li>
+          </ul>
+
+          <h2 style="margin-left: 2vw;">The institution reviews its teaching learning process, structures & methodologies of operations and learning outcomes at periodic intervals through IQAC set up as per norms.</h2>
+          <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;">The IQAC has been monitoring the quality of teaching learning process, structures and methodologies of operations and learning outcomes at periodic intervals during its quarterly meetings in every meeting it includes to discuss the learning outcomes in agenda in each semester. The IQAC has prepared a strategic plan and defined targets for the academic and infrastructural development of the institute. These targets have been set with extensive consultation with all stakeholders which includes students, staff, faculty, alumni, management and the industry. The IQAC takes care to maintain the quality in the process of teaching learning and evaluation. <br><br>
+          
+          <b>Academic Assessment Audit: </b>The institution continuality improves the effectiveness of the quality management system through the use of quality policy, quality objectives, audit results, analysis of data, corrective and preventive actions and management review.
+          Review of the faculty member is taken at the end of the semester again to compare the levels - what was at the beginning and after the various feedbacks and training received. <br><br>
+          <b>Action taken by the faculty members:</b>
+        </p>
+        <ul>
+            <li>Faculty members incorporate changes suggested by the academic committee, if any gaps are found, to ensure quality deliverables.</li>
+            <li>Faculty members have to match the pace of their deliverables as per the students' requirements as well as they have to schedule the lecture plans in such a way that the syllabus is completed on time. To achieve this they can arrange extra lectures and cope-up the syllabus.</li>
+            <li>Regular analysis of the results of internal assessment examination of all subjects is done and concerned faculties are guided to take necessary actions. Remedial classes are scheduled in reference to academic progress of the student.</li>
+            <li>Faculty members attend FDP as required for the overall development of teaching skills in terms of communication, methods and technical.</li>
+            <li>The academic audit is carried out at the beginning of the semester as soon as the faculty members are ready with their course files.</li>
+            <li>The academic observation is carried out considering two criteria - feedback from students (requested to the authorities) and randomized observation.</li>
+            <li>FDP for communication skill development and improving methods of teaching-learning are being carried out regularly by the learning and development department.</li>
+            <li>Technical FDP, expert lectures, seminars etc. are being arranged by the individual departments at least once in a semester</li>
+        </ul>
+
+        <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;"><b>Outcome based education: </b>The institution ensures effective curriculum delivery through a well-planned and documented process. The Heads of Department present the ppt about road map of total program courses with the curriculum of core subjects, the course outcomes and how the supportive subjects are enjoined at different stages as prerequisites. Each department exclusively has set of Vision and Mission, which are aligned with the Vision and Mission of the College. As per OBE, Program Educational Objectives (PEO) and Program Outcomes (PO) are scripted for each program and Course Objectives and Course Outcomes (CO) are defined for each course (Theory & Practical).Course In-charge Plans & Delivers the course contents, takes care of designing of course objectives & Outcomes, Mapping COs with POs, setting benchmark/targets for student performance, preparation of Teaching Plan, identifying delivery modes, developing the teaching materials and aids, ascertaining the content beyond syllabus relevant to the course scheduling and executing remedial classes for weak students.</p>
+
+        <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;"><b>Research and Development: </b>The institution provides extensive opportunities to the faculty and students for research and development. The vibrant research and development activity in the college has resulted in receiving grants from organizations like DST, AICTE, TEQIP etc. and also a few industries. The institute has been recognized as RGNYID for doing industrial research and EDP trained students by the Government of India. </p>
+        <ul>
+            <li>The centers of excellence focus primarily on applied research, product development, industrial training, development of multimedia resources and publication. The centers are equipped with advanced equipment and technology.</li>
+            <li>All faculty are encouraged to present their innovative ideas, file patents, publish research papers in journals / conferences and the team helps and guides them in this initiative. Faculty involved in funded research projects are lauded with appreciation and cash.</li>
+        </ul>
+
+        <p style="text-align: justify; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 2vw;"><b>Feedback System: </b>Methodologies of operations IQAC collect feedback from students in a specially designed format in ERP and taken feedback twice in a year. Feedback is collected on curricular aspects, teaching learning methods, faculty programs and institutional programs. Steps are taken to improve overall performance of the college by analyzing the feedback from the students. The suggestion/complain box are placed in every sections such as DEPARTMENT, ADMINISTRATIVE BLOCK, LIBRARY and also in some important place to get the feedback of the students.
+        </p>
+      </div>
+
+      <main class="container mb-5">
+        <div class="bg-light p-5 rounded mt-3" style="box-shadow: 2px 2px 2px 2px ;">
+          <h1 class="text-center text-light rounded" style="background-color: #444;">AQAR</h1>
+          <ul style="font-size:15px; line-height:28px;">
+            <ul style="font-size:15px; line-height:28px;">				
+                  <li><strong><a href="https://drive.google.com/file/d/1cX8kS3wELocD1NTjedXx3_HmWqMCwxw7/view?usp=sharing" target="_blank" style="text-decoration: none; color: black;">AQAR (2021-22)</a></strong></li>
+                <li><strong><a href="https://drive.google.com/file/d/1sz5YmRgE2pZEJhs0MSJtVGi0wxGthF6J/view?usp=sharing" target="_blank"style="text-decoration: none; color: black;">AQAR (2020-21)</a></strong></li>
+                <li><strong><a href="https://drive.google.com/file/d/1DeZH5ywWADuzWUGbFo1wemdOn0gLvJGg/view?usp=sharing" target="_blank" style="text-decoration: none; color: black;">AQAR (2019-20)</a></strong></li>
+                <li><strong><a href="https://drive.google.com/file/d/1cPEYuwL88BcU2lQvyqQ66uLJHr3-3fcb/view?usp=sharing" target="_blank" style="text-decoration: none; color: black;">AQAR (2018-19)</a></strong></li>
+            </ul>
+           </ul>
+        </div>
+      </main>
+
+
+    <main class="container mb-5">
+        <div class="bg-light p-5 rounded mt-3" style="box-shadow: 2px 2px 2px 2px ;">
+          <h1 class="text-center text-light rounded" style="background-color: #444; margin-bottom: 5vh;">Minutes of Meeting</h1>
+          <div class="accordion" id="accordionExample" >
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Minutes of Meeting_(2018-19)
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="https://drive.google.com/file/d/1ABqjOI1exWLBDfyWM6Y20cr_MdEFncli/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_I</a></li>
+                    <li><a href="https://drive.google.com/file/d/1VtVxsj0pVgCxjexhYUR49an7mJdF-bMc/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_II</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Jtuu3CVDHHxbzn527xEbMcfi5vaA7sfZ/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_III</a></li>
+                    <li><a href="https://drive.google.com/file/d/1bbeWLwRDqq7EihPczLHsqA5n69XQEsdP/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_IV</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Minutes of Meeting_(2019-20)
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="https://drive.google.com/file/d/1HQrTUWxIDaOm7Du5XFq0jUWf4nWrdI2O/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_V</a></li>
+                    <li><a href="https://drive.google.com/file/d/1QvulFbanpqQtVim-o7KSCq8EJHoffRGx/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_VI</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Ks3PTsZOJLdSk_ElmyXlMCpDZiR2aP2M/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_VII</a></li>
+                    <li><a href="https://drive.google.com/file/d/12pwnQRl6EUEb6FkuvvpM44sIxx1rgkkn/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_VIII</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Minutes of Meeting_(2020-21)
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1g8fuOJFltpJaXYO4hilFi9fAgxlg5d8F/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_IX</a></li>
+                        <li><a href="https://drive.google.com/file/d/1cMqnSZaReTlHLe1v9ogtTu57biiBm8T9/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_X</a></li>
+                        <li><a href="https://drive.google.com/file/d/1_PDSKfzNmWKMpgoZ--kJ6MiM-244HTTt/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_XI</a></li>
+                        <li><a href="https://drive.google.com/file/d/1hxIPFiKWkuuSt0UiQJEcsLmowLRxEGBp/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_XII</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Minutes of Meeting_(2021-22)
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1OZvS1RJuub8jgfPbz7i-7HJ90GcnSu5y/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_XIII</a></li>
+                        <li><a href="https://drive.google.com/file/d/1tga2kKPCuSG3SeGtum_oMTMeG67PjeCN/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_XIV</a></li>
+                        <li><a href="https://drive.google.com/file/d/1qAi2emhFCA5FufBxTiYZ9o723v0AoEP0/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_XV</a></li>
+                        <li><a href="https://drive.google.com/file/d/1HoaTKas2ztIdLRap6mrt4NidT6Yx1Pz7/view?usp=sharing" style="text-decoration: none; color: black;">Minutes of Meeting_XVI</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </main>
+
+<!--                    Footer                       -->
+<section class="footer py-5 mb-4 mb-md-0" style="background-color: black; color: white;">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-4 py-3 py-md-0">
+                <h2 class="sub-heading text-light">About</h2>
+
+                <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg text-light">
+                     <rect width="54" height="5" fill="#2E3192"></rect>
+                </svg>
+                <div class="pt-1 pt-md-3 text-light">
+                  <ul style="list-style: disclosure-closed ;font-size: initial ;" class="highlight_points">
+                    <li> <a href="public/documents/mandatory-disclosure.pdf" style="text-decoration: none; color: white;"> Mandatory Disclosure </a></li>
+                    <li> <a href="" style="text-decoration: none; color: white;">Privacy Policy </a></li>
+                    <li> <a href="" style="text-decoration: none; color: white;"> Vacancy </a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <h2 class="sub-heading text-light">SOCIAL LINKS</h2>
+
+                <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg text-light">
+                     <rect width="54" height="5" fill="#2E3192"></rect>
+                </svg>
+                <div id="links" class="pt-1 pt-md-3 text-light">
+                  <a href="#" class="fa fa-facebook text-light"></a>
+                    <a href="#" class="fa fa-instagram text-light"></a>
+                    <a href="#" class="fa fa-linkedin text-light"></a>
+                    <a href="#" class="fa fa-twitter text-light"></a>
+                    <a href="#" class="fa fa-youtube text-light"></a>
+                </div>
+                <p class="link-clr pt-4 text-light">© 2023. All Rights Reserved.</p>
+            </div>
+
+            <div class="col-md-4">
+              <h2 class="sub-heading text-light">CONTACT US</h2>
+              <svg width="54" height="5" viewBox="0 0 54 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon mb-3 replaced-svg">
+                   <rect width="54" height="5" fill="#2E3192"></rect>
+              </svg> <br>
+              <div class="pt-1 pt-md-3">
+                  <a href="https://goo.gl/maps/VFyi5L9ts9qGJvtA6" class="text-decoration-none f-text text-light">
+                      Poornima Group, ISI 6 &amp; 2, RIICO Institutional Area Sitapura, Jaipur - 302022
+                  </a>
+              </div>
+                <ul class="p-0 list-unstyled pt-3">
+                  <li>
+
+                      <a href="tel:+91-9928555222" class="text-decoration-none f-text text-light"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                        <g clip-path="url(#clip0_122_338)">
+                          <path d="M15.5574 11.2841L12.3574 9.68408C12.2072 9.60912 12.0373 9.58331 11.8716 9.6103C11.7059 9.63729 11.5529 9.71572 11.4343 9.83448L10.0943 11.1745C8.1687 10.8649 5.13433 7.8313 4.82554 5.90573L6.16552 4.56575C6.28428 4.4471 6.36271 4.29411 6.3897 4.12842C6.41669 3.96274 6.39088 3.79276 6.31592 3.64256L4.71594 0.442598C4.66356 0.337707 4.58877 0.245611 4.49686 0.172828C4.40495 0.100044 4.29816 0.0483516 4.18406 0.0214096C4.06996 -0.00553233 3.95133 -0.00706554 3.83657 0.0169185C3.7218 0.0409025 3.61372 0.0898175 3.51996 0.160201L0.319996 2.56017C0.22064 2.63469 0.139999 2.73131 0.0844571 2.8424C0.0289156 2.95348 0 3.07597 0 3.20016C0 10.8561 5.14394 16 12.7998 16C12.924 16 13.0465 15.9711 13.1576 15.9155C13.2687 15.86 13.3653 15.7794 13.4398 15.68L15.8398 12.48C15.9102 12.3863 15.9591 12.2782 15.9831 12.1634C16.0071 12.0487 16.0055 11.93 15.9786 11.8159C15.9516 11.7018 15.9 11.5951 15.8272 11.5031C15.7544 11.4112 15.6623 11.3364 15.5574 11.2841Z"></path>
+                          <path d="M9.19989 1.59998C10.5785 1.60167 11.9001 2.15007 12.8749 3.12488C13.8497 4.09969 14.3981 5.42133 14.3998 6.79991C14.3998 7.01208 14.4841 7.21556 14.6341 7.36559C14.7842 7.51562 14.9876 7.5999 15.1998 7.5999C15.412 7.5999 15.6155 7.51562 15.7655 7.36559C15.9155 7.21556 15.9998 7.01208 15.9998 6.79991C15.9977 4.99711 15.2806 3.26876 14.0058 1.99399C12.731 0.719215 11.0027 0.00211721 9.19989 0C8.98772 0 8.78424 0.0842844 8.63421 0.234312C8.48419 0.384339 8.3999 0.587819 8.3999 0.79999C8.3999 1.01216 8.48419 1.21564 8.63421 1.36567C8.78424 1.5157 8.98772 1.59998 9.19989 1.59998Z"></path>
+                           <path d="M9.19989 4.80018C9.73032 4.80018 10.239 5.01089 10.6141 5.38595C10.9892 5.76102 11.1999 6.26972 11.1999 6.80015C11.1999 7.01232 11.2842 7.2158 11.4342 7.36583C11.5842 7.51586 11.7877 7.60014 11.9999 7.60014C12.212 7.60014 12.4155 7.51586 12.5655 7.36583C12.7156 7.2158 12.7998 7.01232 12.7998 6.80015C12.7998 5.84538 12.4206 4.92972 11.7454 4.2546C11.0703 3.57948 10.1547 3.2002 9.19989 3.2002C8.98772 3.2002 8.78424 3.28448 8.63421 3.43451C8.48419 3.58453 8.3999 3.78801 8.3999 4.00019C8.3999 4.21236 8.48419 4.41584 8.63421 4.56586C8.78424 4.71589 8.98772 4.80018 9.19989 4.80018Z"></path>
+                       </g>
+                      <defs>
+                      <clipPath id="clip0_122_338">
+                           <rect width="16" height="16"></rect>
+                       </clipPath>
+                       </defs>
+                      </svg> +91-9928555222
+                      </a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="https://api.whatsapp.com/send?text=Hi!+I+have+an+enquiry&amp;phone=%20+91-9928666222" class="text-decoration-none f-text text-light">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                           <path d="M8.00031 0.0230633C3.59998 0.0230633 0.0232299 3.60323 0.0232299 8.00015C0.0232299 9.46477 0.422136 10.8911 1.18149 12.1355L0.0391272 15.5591C0.000799078 15.674 0.029512 15.7984 0.11565 15.8846C0.176279 15.9452 0.259212 15.9771 0.342279 15.9771C0.3774 15.9771 0.409318 15.9739 0.444443 15.9612L3.86495 14.8221C5.1124 15.5784 6.53869 15.9771 8.00033 15.9771C12.4007 15.9771 15.9774 12.4004 15.9774 8.00004C15.9774 3.60312 12.4003 0.0229492 8.00033 0.0229492L8.00031 0.0230633ZM13.1056 11.2296C13.1056 11.5072 12.9908 11.7816 12.7928 11.9794L11.9632 12.7995C11.7654 12.9973 11.4974 13.1058 11.223 13.1058H11.1815C6.72369 12.9142 3.08609 9.2767 2.89464 4.82234C2.88182 4.53201 2.9936 4.24474 3.20099 4.03735L4.02109 3.20775C4.21888 3.00996 4.4933 2.89511 4.77415 2.89511H5.08051C5.5176 2.89511 5.91651 3.16955 6.0697 3.58113L6.79726 5.51156C6.93762 5.88803 6.85148 6.31884 6.57397 6.61238L6.27402 6.92821C6.13674 7.07178 6.12085 7.29201 6.23249 7.45464C6.60268 7.99071 7.39396 9.0022 8.549 9.78076C8.70859 9.88613 8.92562 9.8669 9.06596 9.73295L9.39141 9.42659C9.68174 9.14895 10.1126 9.0628 10.489 9.20317L12.4194 9.93072C12.831 10.0871 13.1055 10.4828 13.1055 10.9199L13.1056 11.2296Z"></path>
+                          </svg> +91-9928666222
+                      </a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="mailto:info@poornima.org" class="text-decoration-none f-text text-light" target="_blank">
+                          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="" class="topicon me-2 replaced-svg">
+                          <g clip-path="url(#clip0_122_349)">
+                              <path d="M8 6.65143L0.977143 0.171429C1.20702 0.0600838 1.45887 0.00151367 1.71429 0H14.2857C14.5411 0.00151367 14.793 0.0600838 15.0229 0.171429L8 6.65143ZM15.8286 0.977143L8.4 7.83429C8.29434 7.93228 8.15554 7.98674 8.01143 7.98674C7.86732 7.98674 7.72852 7.93228 7.62286 7.83429L0.194286 0.977143C0.0750195 1.20516 0.00861598 1.4571 0 1.71429V9.71429C0 10.1689 0.180612 10.605 0.502103 10.9265C0.823594 11.248 1.25963 11.4286 1.71429 11.4286H14.2857C14.7404 11.4286 15.1764 11.248 15.4979 10.9265C15.8194 10.605 16 10.1689 16 9.71429V1.71429C15.9985 1.45887 15.9399 1.20702 15.8286 0.977143Z"></path>
+                          </g>
+                          <defs>
+                               <clipPath id="clip0_122_349">
+                                   <rect width="16" height="11.4286"></rect>
+                               </clipPath>
+                           </defs>
+                       </svg> info@poornima.org
+                      </a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+</section>
+<div class="text text-decoration-none">
+  <p class="text-center m-2 text-decoration-none">Designed and Developed by : <a href="https://linktr.ee/dev_09" target="_blank"><span class="text-primary text-decoration-none">Dev Tekwani | PIET </span></p></a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+  })
+</script>
+<script src="script.js"></script>
+</body>
+</html>
