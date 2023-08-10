@@ -19,6 +19,20 @@
         transform: translateY(20px);
         transition: opacity 0.5s step-end, transform 0.5s step-end;
       }
+
+      .card {
+        background-color: #444444;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+        /* Scale up the card on hover */
+        .card:hover {
+          background-color: #2E3192;
+    transform: scale(1.05) translateZ(10px);
+  }
     
       /* Apply animations when cards are in view */
       @keyframes fadeIn {
