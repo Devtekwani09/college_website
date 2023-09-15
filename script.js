@@ -16,3 +16,24 @@ scrollToTopBtn.onclick = function() {
     behavior: "smooth"
   });
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Load the navbar
+  fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("Header").innerHTML = data;
+      });
+  fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("Navbar").innerHTML = data;
+      });
+
+  // Load the footer
+  fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("Footer").innerHTML = data;
+      });
+});
