@@ -25,8 +25,35 @@
      <div id="Navbar"  style="position: sticky; top: 0; z-index: 100;"></div>
 
   <!--                     content                      -->
-    <img class="flex justify-content-center align-items-center" src="images/website-under-construction.png" alt="" width="100%">
-
+  <main class="container mb-5">
+  <div class="container mt-3 mb-4 bg-light p-5 rounded mt-3" style="box-shadow: 2px 2px 2px 2px ;">
+    <h1 class="text-center text-light rounded mb-3" style="background-color: #444;">Grievance Submission Form</h1>
+    <form class="row g-3" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="82401e78-b0a5-4cc6-9abe-16581396b68d">
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Subject</label>
+        <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Subject">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Your Grievance</label>
+        <input type="text" class="form-control" name="grievance" id="textarea" placeholder="Type Here">
+      </div>
+      
+      <div class="col-12 align ">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</main>
+  
   <!-- footer   -->
  <div id="Footer"></div>
 
