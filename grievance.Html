@@ -32,23 +32,24 @@
       <input type="hidden" name="access_key" value="82401e78-b0a5-4cc6-9abe-16581396b68d">
       <div class="col-md-6">
         <label for="inputPassword4" class="form-label">Name</label>
-        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
       </div>
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email" required>
       </div>
       <div class="col-12">
         <label for="inputAddress" class="form-label">Subject</label>
-        <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Subject">
+        <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Subject" required>
       </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Your Grievance</label>
-        <input type="text" class="form-control" name="grievance" id="textarea" placeholder="Type Here">
+      <label for="Textarea2">Your Grievance</label>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Write Here" id="floatingTextarea2" style="height: 100px"></textarea> 
+        <label for="floatingTextarea2" style="opacity: 60%;">Write Here</label>
       </div>
       
       <div class="col-12 align ">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary rounded-30% btn-hover-bg-shade-amount:15%">Submit</button>
       </div>
     </form>
   </div>
