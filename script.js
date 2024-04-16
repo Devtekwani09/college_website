@@ -36,4 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(data => {
           document.getElementById("Footer").innerHTML = data;
       });
+
+  fetch("iqac_mom.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("iqac_mom").innerHTML = data;
+      });
 });
