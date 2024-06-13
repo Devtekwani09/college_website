@@ -231,4 +231,8 @@ float: inline-end;
     transition: step-start;
   }
 
+  a{
+    text-decoration: none;
+    color: white;
+  }
 
